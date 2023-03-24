@@ -99,7 +99,6 @@ def make_lacuna_of_area(karno_matrix: List[List[Function.FunctionValue]], value_
         else:
             continue
         lacuna_area = []
-        checked = False
         break
     else:
         if not checked:
