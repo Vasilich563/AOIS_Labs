@@ -1,13 +1,16 @@
 //Author: Vodohleb04
-#include<iostream>
+#include <iostream>
+#include <string>
+#include <math.h>
+#include "HashTable.h"
 
 
 int main()
 {
-    int a = 5;
-    auto b = 6.5;
-    auto c = a + b;
-    std::cout<<(c);
-
+    //auto a = std::string("aboba");
+    auto a = "aboba";
+    std::cout << 10 % 5 << std::endl << 3 % 128 << std::endl;
+    HashTable* b = new HashTable(a);
+    delete b;
     return 0;
 }
