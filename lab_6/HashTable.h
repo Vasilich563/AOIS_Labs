@@ -14,6 +14,42 @@ class HashTable
 {
 private:
 
+    class HashTableElement
+    {
+    private:
+
+        unsigned long hash_id;
+
+        std::string data;
+
+        std::string key;
+
+    public:
+
+        HashTableElement(unsigned long hash_id, std::string key, std::string data);
+
+        HashTableElement(unsigned long hash_id, const char* key, const char* data);
+
+        HashTableElement(const HashTableElement& other);
+
+        HashTableElement& operator= (const HashTableElement& other);
+
+        bool operator== (const HashTableElement& other);
+
+        bool operator != (const HashTableElement& other);
+
+        std::string& getData();
+
+        void setData(std::string new_data);
+
+        void setData(const char* data);
+
+        std::string& getKey();
+
+        unsigned long getHashId();
+
+    };
+
     unsigned long hashFunction(std::string str);
     unsigned long hashFunction(const char* str);
 

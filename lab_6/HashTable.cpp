@@ -35,3 +35,58 @@ HashTable::HashTable(const char* expr)
 {
     this->hashFunction(expr);
 }
+
+HashTable::HashTableElement::HashTableElement(unsigned long hash_id, std::string key, std::string data)
+{
+
+}
+
+HashTable::HashTableElement::HashTableElement(unsigned long hash_id, const char* key, const char* data)
+{
+
+}
+
+HashTable::HashTableElement::HashTableElement(const HashTable::HashTableElement& other)
+{
+
+}
+
+HashTable::HashTableElement& HashTable::HashTableElement::operator=(const HashTable::HashTableElement& other)
+{
+
+}
+
+bool HashTable::HashTableElement::operator==(const HashTable::HashTableElement& other)
+{
+
+}
+
+bool HashTable::HashTableElement::operator!=(const HashTable::HashTableElement& other)
+{
+
+}
+
+std::string& HashTable::HashTableElement::getData()
+{
+
+}
+
+std::string& HashTable::HashTableElement::getKey()
+{
+
+}
+
+void HashTable::HashTableElement::setData(std::string new_data)
+{
+
+}
+
+void HashTable::HashTableElement::setData(const char* new_data)
+{
+
+}
+
+unsigned long HashTable::HashTableElement::getHashId()
+{
+    
+}
