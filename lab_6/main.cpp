@@ -9,7 +9,7 @@ int main()
 {
     //auto a = std::string("aboba");
     auto a = "aboba";
-    std::cout << 10 % 5 << std::endl << 3 % 128 << std::endl;
+    std::cout << 10 % 5 << std::endl << std::string(a) << std::endl;
     HashTable* b = new HashTable(a);
     delete b;
     return 0;

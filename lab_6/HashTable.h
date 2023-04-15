@@ -40,7 +40,7 @@ private:
 
         std::string& getData();
 
-        void setData(std::string new_data);
+        void setData(std::string data);
 
         void setData(const char* data);
 
