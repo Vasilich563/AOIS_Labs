@@ -3,12 +3,21 @@
 #ifndef _HASH_TABLE_
 #define _HASH_TABLE_
 #define HASH_FUNCTION_P 129
-#define HASH_FUNCTION_MOD 9.22337e+18
+#define HASH_FUNCTION_MOD 1.84467e+19
+#define REHASH_SIZE_COEFFICIENT 3/4.
+#define REHASH_ELEMENTS_AMOUNT_COEFFICIENT 4/3.
+#define BASIC_TABLE_SIZE 8
 
+#include <stdexcept>
 #include <vector>
 #include <forward_list>
 #include <string>
 #include <iostream>
+
+
+class HashTable;
+
+std::ostream& operator<<(std::ostream& out, const HashTable& hash_table);
 
 class HashTable
 {
@@ -18,17 +27,23 @@ private:
     {
     private:
 
-        unsigned long hash_id;
+        unsigned long hash;
 
         std::string data;
 
         std::string key;
 
+        friend std::ostream& operator<<(std::ostream& out, const HashTable::HashTableElement& hash_element)
+        {
+            out << "Hash: " << hash_element.hash << ",\tkey: " << hash_element.key << ",\tdata: " << hash_element.data;
+            return out;
+        }
+
     public:
 
-        HashTableElement(unsigned long hash_id, std::string key, std::string data);
+        HashTableElement();
 
-        HashTableElement(unsigned long hash_id, const char* key, const char* data);
+        HashTableElement(unsigned long hash, std::string key, std::string data);
 
         HashTableElement(const HashTableElement& other);
 
@@ -46,17 +61,49 @@ private:
 
         std::string& getKey();
 
-        unsigned long getHashId();
+        unsigned long getHash();
+
+        bool empty();
 
     };
 
-    unsigned long hashFunction(std::string str);
-    unsigned long hashFunction(const char* str);
+    friend std::ostream& operator<<(std::ostream& out, const HashTable& hash_table);
+
+    std::ostream& addElementsChainToOutput(std::ostream& out);
+
+    unsigned long hashFunction(std::string key);
+    unsigned long hashFunction(const char* key);
+
+    std::vector<std::forward_list<HashTableElement>> table;
+    size_t elements_amount;
+
+    size_t countUsedIndexes();
+
+    void emplaceElementIntoTable(HashTableElement new_element);
+
+    void rehashTable();
+
 
 public:
 
-    HashTable(std::string expr);
-    HashTable(const char* expr);
+    HashTable();
+    HashTable(const HashTable& other);
+    HashTable& operator=(const HashTable& other);
+    
+    size_t elementsAmount();
+    size_t elementsAmount() const;
+
+    size_t size();
+    size_t size() const; 
+
+    bool collisionsAtIndex(int index);
+    bool collisionsAtIndex(int index) const;
+
+    void addElement(const char* key, const char* value);
+    void addElement(const char* key, std::string value);
+    void addElement(std::string key, const char* value);
+    void addElement(std::string key, std::string value);
 };
+
 
 #endif //!_HASH_TABLE_
