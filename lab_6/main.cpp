@@ -7,7 +7,7 @@
 
 int main()
 {
-    HashTable table()
+    HashTable table;
     std::string keys[] = {"John", "Mary", "Alex", "William", "Emila", "Olivia", "James", "Sophia", "Ethan", "Isabella", "Michael", "Emma", "Benjamin", "Ava", "Daniel", "Mia", "Matthew", "Charlotte", "David", "Amelia", "Andrew", "Abigail", "Lucas", "Harper", "Joseph", "Evelyn", "Samuel", "Emily", "Christopher", "Ella", "Jacob", "Grace", "Willy", "Sophie", "Ryan", "Chloe", "Gabriel", "Victoria", "Nicholas", "Zoe", "Luke", "Lily", "Nathan", "Lila", "Anthony", "Layla", "Max", "Aria", "Kevin", "Avery", "Eric", "Eleanor", "Mark", "Audrey", "Philip", "Hannah", "Peter", "Aurora", "Simon", "Bella", "Sean", "Brooklyn", "Henry", "Eva", "Adam", "Caroline", "Thomas"};
     std::string values[] = {
         "Teacher", "Doctor", "Lawyer", "Engineer", "Programmer", "Writer",
@@ -30,12 +30,8 @@ int main()
     {
         table.addElement(keys[i],values[i]);
     }
-
-
-    //auto a = std::string("aboba");
-    auto a = "aboba";
-    std::cout << 10 % 5 << std::endl << std::string(a) << std::endl;
-    HashTable* b = new HashTable(a);
-    delete b;
+    std::cout<<table;
+    table.logout << table;
+    table.logout.close();
     return 0;
 }

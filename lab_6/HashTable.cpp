@@ -19,7 +19,8 @@ std::ostream& operator<<(std::ostream& out, const HashTable& hash_table)
                     first_element_flag = false;
                     out << element.getHash() << "\n";
                 }
-                out << "\tKey: " << element.getKey() << "\t data: " << element.getData() << "\n";
+                out << element;
+                //out << "\tKey: " << element.getKey() << "\t data: " << element.getData() << "\n";
             }
         }
         else
@@ -133,19 +134,30 @@ size_t HashTable::countUsedIndexes()
 
 void HashTable::emplaceElementIntoTable(HashTableElement new_element)
 {
+    logout << "elements_amount: " << elements_amount << "\tcountUsedIndexes: " << countUsedIndexes() << "\n";
     bool rehashSizeFlag = (countUsedIndexes() / size()) >= double(REHASH_SIZE_COEFFICIENT);
     bool rehashAmountFlag = (elements_amount / size()) >= double(REHASH_ELEMENTS_AMOUNT_COEFFICIENT);
+    logout << "rehashSizeFlag " << rehashSizeFlag << (countUsedIndexes() / size()) << endl;
+    logout << "rehashAmountFlag " << rehashAmountFlag << (elements_amount / size()) << endl;
     if(rehashSizeFlag || rehashAmountFlag)
     {
         rehashTable();
     }
     int id = new_element.getHash() % size();
+    logout << new_element << "\tId: " << id << "\tSize: "<< size() << endl;
     table[id].push_front(new_element);
+    logout << "\n#\nId: " << id << "\t Elements:" << endl;
+    for(auto el : table[id])
+    {
+        logout << el << "\t";
+    }
+    logout << "#" << endl;
     elements_amount++;
 }
 
 void HashTable::rehashTable()
 {
+    logout << "rehash()" << endl;
     auto buffer = this->table;
     table = vector<forward_list<HashTableElement>>(buffer.size() * 2);
     elements_amount = 0;
@@ -159,6 +171,7 @@ void HashTable::rehashTable()
             }
         }
     }
+    logout << *this << endl;
     buffer.clear();
 }
 
@@ -169,18 +182,25 @@ unsigned long HashTable::hashFunction(const char * key)
     {
         hash = (hash * (unsigned long)HASH_FUNCTION_P + (unsigned long)(*key))%(unsigned long)(HASH_FUNCTION_MOD);
     }
-    std::cout<<"#\t"<<hash<<"\t#\n";
+    logout << "Key: " << key << "\t" << "Hash: " << hash << endl;
     return hash;
 }
 
 unsigned long HashTable::hashFunction(string key)
 {
+    logout << "key: " << key << '\t' << "key.c_str: " << key.c_str() << endl;
     return this->hashFunction(key.c_str());
 }
 
 HashTable::HashTable()
 {
     table = vector<forward_list<HashTableElement>>(int(BASIC_TABLE_SIZE));
+    logout.open("log.txt");
+    if (!logout.is_open())
+    {
+        cout<<"Not open"<<endl;
+        throw exception();
+    }
 }
 
 HashTable::HashTable(const HashTable& other)
@@ -279,6 +299,7 @@ void HashTable::addElement(std::string key, const char* value)
 
 void HashTable::addElement(std::string key, std::string value)
 {
+    logout << "addElement()" <<endl;
     emplaceElementIntoTable(
         HashTableElement(
             hashFunction(key),

@@ -14,6 +14,8 @@
 #include <string>
 #include <iostream>
 
+#include <fstream>
+
 
 class HashTable;
 
@@ -103,6 +105,8 @@ public:
     void addElement(const char* key, std::string value);
     void addElement(std::string key, const char* value);
     void addElement(std::string key, std::string value);
+
+    std::ofstream logout;
 };
 
 
