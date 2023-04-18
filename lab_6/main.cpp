@@ -8,23 +8,33 @@
 int main()
 {
     HashTable table;
-    std::string keys[] = {"John", "Mary", "Alex", "William", "Emila", "Olivia", "James", "Sophia", "Ethan", "Isabella", "Michael", "Emma", "Benjamin", "Ava", "Daniel", "Mia", "Matthew", "Charlotte", "David", "Amelia", "Andrew", "Abigail", "Lucas", "Harper", "Joseph", "Evelyn", "Samuel", "Emily", "Christopher", "Ella", "Jacob", "Grace", "Willy", "Sophie", "Ryan", "Chloe", "Gabriel", "Victoria", "Nicholas", "Zoe", "Luke", "Lily", "Nathan", "Lila", "Anthony", "Layla", "Max", "Aria", "Kevin", "Avery", "Eric", "Eleanor", "Mark", "Audrey", "Philip", "Hannah", "Peter", "Aurora", "Simon", "Bella", "Sean", "Brooklyn", "Henry", "Eva", "Adam", "Caroline", "Thomas"};
+    std::string keys[] = {
+        "Ahmed", "Mary", "Alex", "William", "Emila", "Olivia", "James", 
+        "Sophia", "Ethan", "Isabella", "Michael", "Emma", "Benjamin", "Ava", 
+        "Daniel", "Mia", "Matthew", "Charlotte", "David", "Amelia", "Andrew", 
+        "Abigail", "Lucas", "Harper", "Joseph", "Evelyn", "Samuel", "Emily", 
+        "Christopher", "Ella", "Jacob", "Grace", "Willy", "Sophie", "Ryan", 
+        "Chloe", "Gabriel", "Victoria", "Nicholas", "Zoe", "Luke", "Lily",
+        "Nathan", "Lila", "Anthony", "Layla", "Max", "Aria", "Kevin",
+        "Avery", "Eric", "Eleanor", "Mark", "Audrey", "Philip", "Hannah",
+        "Peter", "Aurora", "Simon", "Bella", "Sean", "Brooklyn", "Henry"
+    };
     std::string values[] = {
-        "Teacher", "Doctor", "Lawyer", "Engineer", "Programmer", "Writer",
-        "Nurse", "Scientist", "Accountant", "Chef", "Mechanic", "Musician",
-        "Actor", "Athlete", "Dentist", "Pharmacist", "Architect", "Farmer",
-        "Salesperson", "Journalist", "Electrician", "Plumber", "Carpenter",
-        "Painter", "Truck driver", "Police officer", "Firefighter",
-        "Paramedic", "Flight attendant", "Tour guide", "Librarian",
-        "Construction worker", "Waitress", "Hairdresser",
-        "Cleaner", "Administrative assistant",
-        "Graphic designer", "Web developer", "Data analyst",
-        "Marketing specialist", "Human resources specialist", "Consultant",
-        "Social worker", "Psychologist", "Professor",
-        "Researcher", "Military service member", "Judge", "Real estate agent",
-        "Interior designer", "Event planner", "Photographer", "Artist",
-        "Fashion designer", "Bartender", "Singer", "Dancer", "Magician",
-        "Stock trader", "Entrepreneur", "Gardener", "Coach", "Fitness trainer"
+        "BWM E24 635 csi", "Fiat Punto", "Dodge RAM", "Buick Riviera 1965", "Volkswagen Passat B7", "Ford Scorpio",
+        "Mini Clubman", "Mazda RX-7", "Mercedes-Benz CLA", "Mercedes-Benz CLS350", "Honda Civic 8", "BMW e63",
+        "BMW X7", "Audi A6", "Volkswagen Golf 8", "Dodge Charger", "Toyota Corolla", "Nissan Skyline R34",
+        "Peugeot 308", "Subaru Forester", "Subaru Impreza", "Mitsubishi Lancer", "BMW M5 F90",
+        "Mazda 636", "Mercedes-Benz Sprinter", "Ford Crown Victoria", "LADA 21031",
+        "Porsche Panamera", "Pontiac Firebird", "Ford Probe", "Lincoln Continental",
+        "Cadillac Fleetwood", "Chevrolet Corvair", "Chevrolet Camaro",
+        "Chevrolet Corvette C6", "Audi Sport quattro",
+        "Toyota MarkII X100", "Mitsubishi Galant", "SAAB 9-3",
+        "Volvo 200", "AMC Gremlin", "Opel Diplomat",
+        "Nissan Z350", "Mercury Marauder", "Rover 75",
+        "Alfa Romeo 156", "Land Rover Defender 110", "BMW e65", "Crysler 300M",
+        "Lancia Kappa", "Citroen XM", "Jeep Cherokee XJ", "GMC Suburban",
+        "Ford Mustang SN95", "Ford Orion Mark2", "Audi A8L", "BMW e90", "Renault Logan",
+        "Jaguar XJ", "Nissan Silvia S14", "Toyota Corolla AE86", "Nissan  Maxima A32", "Lancia Delta S4"
     };
     for (int i = 0; i < 63; i++)
     {

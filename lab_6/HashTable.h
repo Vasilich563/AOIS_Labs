@@ -6,7 +6,7 @@
 #define HASH_FUNCTION_MOD 1.84467e+19
 #define REHASH_SIZE_COEFFICIENT 3/4.
 #define REHASH_ELEMENTS_AMOUNT_COEFFICIENT 4/3.
-#define BASIC_TABLE_SIZE 8
+#define BASIC_TABLE_SIZE 13
 
 #include <stdexcept>
 #include <vector>

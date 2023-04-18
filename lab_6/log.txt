@@ -1,785 +1,1492 @@
 addElement()
-key: John	key.c_str: John
-Key: 	Hash: 160715663
-elements_amount: 64	countUsedIndexes: 0
+key: Ahmed	key.c_str: Ahmed
+Key: 	Hash: 18225069919
+elements_amount: 31	countUsedIndexes: 0
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 160715663,	key: John,	data: Teacher	Id: 15	Size: 128
+rehashAmountFlag 12
+rehash()
+
+Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi	Id: 17
+	Size: 26
 
 #
-Id: 15	 Elements:
-Hash: 160715663,	key: John,	data: Teacher	#
+Id: 17
+	 Elements:
+Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi	#
 addElement()
 key: Mary	key.c_str: Mary
 Key: 	Hash: 166924057
-elements_amount: 65	countUsedIndexes: 1
+elements_amount: 1	countUsedIndexes: 1
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 166924057,	key: Mary,	data: Doctor	Id: 25	Size: 128
+Hash: 166924057,	key: Mary,	data: Fiat Punto	Id: 1
+	Size: 26
 
 #
-Id: 25	 Elements:
-Hash: 166924057,	key: Mary,	data: Doctor	#
+Id: 1
+	 Elements:
+Hash: 166924057,	key: Mary,	data: Fiat Punto	#
 addElement()
 key: Alex	key.c_str: Alex
 Key: 	Hash: 141345162
-elements_amount: 66	countUsedIndexes: 2
+elements_amount: 2	countUsedIndexes: 2
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 141345162,	key: Alex,	data: Lawyer	Id: 10	Size: 128
+Hash: 141345162,	key: Alex,	data: Dodge RAM	Id: 10
+	Size: 26
 
 #
-Id: 10	 Elements:
-Hash: 141345162,	key: Alex,	data: Lawyer	#
+Id: 10
+	 Elements:
+Hash: 141345162,	key: Alex,	data: Dodge RAM	#
 addElement()
 key: William	key.c_str: William
 Key: 	Hash: 404700870353359
-elements_amount: 67	countUsedIndexes: 3
+elements_amount: 3	countUsedIndexes: 3
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 404700870353359,	key: William,	data: Engineer	Id: 79	Size: 128
+Hash: 404700870353359,	key: William,	data: Buick Riviera 1965	Id: 21
+	Size: 26
 
 #
-Id: 79	 Elements:
-Hash: 404700870353359,	key: William,	data: Engineer	#
+Id: 21
+	 Elements:
+Hash: 404700870353359,	key: William,	data: Buick Riviera 1965	#
 addElement()
 key: Emila	key.c_str: Emila
 Key: 	Hash: 19343429224
-elements_amount: 68	countUsedIndexes: 4
+elements_amount: 4	countUsedIndexes: 4
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 19343429224,	key: Emila,	data: Programmer	Id: 104	Size: 128
+Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7	Id: 2
+	Size: 26
 
 #
-Id: 104	 Elements:
-Hash: 19343429224,	key: Emila,	data: Programmer	#
+Id: 2
+	 Elements:
+Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7	#
 addElement()
 key: Olivia	key.c_str: Olivia
 Key: 	Hash: 2852256131044
-elements_amount: 69	countUsedIndexes: 5
+elements_amount: 5	countUsedIndexes: 5
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2852256131044,	key: Olivia,	data: Writer	Id: 100	Size: 128
+Hash: 2852256131044,	key: Olivia,	data: Ford Scorpio	Id: 8
+	Size: 26
 
 #
-Id: 100	 Elements:
-Hash: 2852256131044,	key: Olivia,	data: Writer	#
+Id: 8
+	 Elements:
+Hash: 2852256131044,	key: Olivia,	data: Ford Scorpio	#
 addElement()
 key: James	key.c_str: James
 Key: 	Hash: 20702349040
-elements_amount: 70	countUsedIndexes: 6
+elements_amount: 6	countUsedIndexes: 6
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 20702349040,	key: James,	data: Nurse	Id: 112	Size: 128
+Hash: 20702349040,	key: James,	data: Mini Clubman	Id: 22
+	Size: 26
 
 #
-Id: 112	 Elements:
-Hash: 20702349040,	key: James,	data: Nurse	#
+Id: 22
+	 Elements:
+Hash: 20702349040,	key: James,	data: Mini Clubman	#
 addElement()
 key: Sophia	key.c_str: Sophia
 Key: 	Hash: 2995993900132
-elements_amount: 71	countUsedIndexes: 7
+elements_amount: 7	countUsedIndexes: 7
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2995993900132,	key: Sophia,	data: Scientist	Id: 100	Size: 128
+Hash: 2995993900132,	key: Sophia,	data: Mazda RX-7	Id: 12
+	Size: 26
 
 #
-Id: 100	 Elements:
-Hash: 2995993900132,	key: Sophia,	data: Scientist	Hash: 2852256131044,	key: Olivia,	data: Writer	#
+Id: 12
+	 Elements:
+Hash: 2995993900132,	key: Sophia,	data: Mazda RX-7	#
 addElement()
 key: Ethan	key.c_str: Ethan
 Key: 	Hash: 19358438000
-elements_amount: 72	countUsedIndexes: 7
+elements_amount: 8	countUsedIndexes: 8
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 19358438000,	key: Ethan,	data: Accountant	Id: 112	Size: 128
+Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	Id: 18
+	Size: 26
 
 #
-Id: 112	 Elements:
-Hash: 19358438000,	key: Ethan,	data: Accountant	Hash: 20702349040,	key: James,	data: Nurse	#
+Id: 18
+	 Elements:
+Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	#
 addElement()
 key: Isabella	key.c_str: Isabella
 Key: 	Hash: 43929557046135709
-elements_amount: 73	countUsedIndexes: 7
+elements_amount: 9	countUsedIndexes: 9
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 43929557046135709,	key: Isabella,	data: Chef	Id: 29	Size: 128
+Hash: 43929557046135709,	key: Isabella,	data: Mercedes-Benz CLS350	Id: 13
+	Size: 26
 
 #
-Id: 29	 Elements:
-Hash: 43929557046135709,	key: Isabella,	data: Chef	#
+Id: 13
+	 Elements:
+Hash: 43929557046135709,	key: Isabella,	data: Mercedes-Benz CLS350	#
 addElement()
 key: Michael	key.c_str: Michael
 Key: 	Hash: 358615632700851
-elements_amount: 74	countUsedIndexes: 8
+elements_amount: 10	countUsedIndexes: 10
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 358615632700851,	key: Michael,	data: Mechanic	Id: 51	Size: 128
+Hash: 358615632700851,	key: Michael,	data: Honda Civic 8	Id: 19
+	Size: 26
 
 #
-Id: 51	 Elements:
-Hash: 358615632700851,	key: Michael,	data: Mechanic	#
+Id: 19
+	 Elements:
+Hash: 358615632700851,	key: Michael,	data: Honda Civic 8	#
 addElement()
 key: Emma	key.c_str: Emma
 Key: 	Hash: 149949568
-elements_amount: 75	countUsedIndexes: 9
+elements_amount: 11	countUsedIndexes: 11
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 149949568,	key: Emma,	data: Musician	Id: 0	Size: 128
+Hash: 149949568,	key: Emma,	data: BMW e63	Id: 2
+	Size: 26
 
 #
-Id: 0	 Elements:
-Hash: 149949568,	key: Emma,	data: Musician	#
+Id: 2
+	 Elements:
+Hash: 149949568,	key: Emma,	data: BMW e63	Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7	#
 addElement()
 key: Benjamin	key.c_str: Benjamin
 Key: 	Hash: 39704236703904548
-elements_amount: 76	countUsedIndexes: 10
+elements_amount: 12	countUsedIndexes: 11
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 39704236703904548,	key: Benjamin,	data: Actor	Id: 36	Size: 128
+Hash: 39704236703904548,	key: Benjamin,	data: BMW X7	Id: 22
+	Size: 26
 
 #
-Id: 36	 Elements:
-Hash: 39704236703904548,	key: Benjamin,	data: Actor	#
+Id: 22
+	 Elements:
+Hash: 39704236703904548,	key: Benjamin,	data: BMW X7	Hash: 20702349040,	key: James,	data: Mini Clubman	#
 addElement()
 key: Ava	key.c_str: Ava
 Key: 	Hash: 1096984
-elements_amount: 77	countUsedIndexes: 11
+elements_amount: 13	countUsedIndexes: 11
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 1096984,	key: Ava,	data: Athlete	Id: 24	Size: 128
+Hash: 1096984,	key: Ava,	data: Audi A6	Id: 18
+	Size: 26
 
 #
-Id: 24	 Elements:
-Hash: 1096984,	key: Ava,	data: Athlete	#
+Id: 18
+	 Elements:
+Hash: 1096984,	key: Ava,	data: Audi A6	Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	#
 addElement()
 key: Daniel	key.c_str: Daniel
 Key: 	Hash: 2456266927821
-elements_amount: 78	countUsedIndexes: 12
+elements_amount: 14	countUsedIndexes: 11
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2456266927821,	key: Daniel,	data: Dentist	Id: 77	Size: 128
+Hash: 2456266927821,	key: Daniel,	data: Volkswagen Golf 8	Id: 5
+	Size: 26
 
 #
-Id: 77	 Elements:
-Hash: 2456266927821,	key: Daniel,	data: Dentist	#
+Id: 5
+	 Elements:
+Hash: 2456266927821,	key: Daniel,	data: Volkswagen Golf 8	#
 addElement()
 key: Mia	key.c_str: Mia
 Key: 	Hash: 1294999
-elements_amount: 79	countUsedIndexes: 13
+elements_amount: 15	countUsedIndexes: 12
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 1294999,	key: Mia,	data: Pharmacist	Id: 23	Size: 128
+Hash: 1294999,	key: Mia,	data: Dodge Charger	Id: 17
+	Size: 26
 
 #
-Id: 23	 Elements:
-Hash: 1294999,	key: Mia,	data: Pharmacist	#
+Id: 17
+	 Elements:
+Hash: 1294999,	key: Mia,	data: Dodge Charger	Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi	#
 addElement()
 key: Matthew	key.c_str: Matthew
 Key: 	Hash: 358334581853402
-elements_amount: 80	countUsedIndexes: 14
+elements_amount: 16	countUsedIndexes: 12
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 358334581853402,	key: Matthew,	data: Architect	Id: 90	Size: 128
+Hash: 358334581853402,	key: Matthew,	data: Toyota Corolla	Id: 24
+	Size: 26
 
 #
-Id: 90	 Elements:
-Hash: 358334581853402,	key: Matthew,	data: Architect	#
+Id: 24
+	 Elements:
+Hash: 358334581853402,	key: Matthew,	data: Toyota Corolla	#
 addElement()
 key: Charlotte	key.c_str: Charlotte
 Key: 	Hash: 5200256600009926694
-elements_amount: 81	countUsedIndexes: 15
+elements_amount: 17	countUsedIndexes: 13
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 5200256600009926694,	key: Charlotte,	data: Farmer	Id: 38	Size: 128
+Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34	Id: 18
+	Size: 26
 
 #
-Id: 38	 Elements:
-Hash: 5200256600009926694,	key: Charlotte,	data: Farmer	#
+Id: 18
+	 Elements:
+Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34	Hash: 1096984,	key: Ava,	data: Audi A6	Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	#
 addElement()
 key: David	key.c_str: David
 Key: 	Hash: 19040962024
-elements_amount: 82	countUsedIndexes: 16
+elements_amount: 18	countUsedIndexes: 13
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 19040962024,	key: David,	data: Salesperson	Id: 104	Size: 128
+Hash: 19040962024,	key: David,	data: Peugeot 308	Id: 6
+	Size: 26
 
 #
-Id: 104	 Elements:
-Hash: 19040962024,	key: David,	data: Salesperson	Hash: 19343429224,	key: Emila,	data: Programmer	#
+Id: 6
+	 Elements:
+Hash: 19040962024,	key: David,	data: Peugeot 308	#
 addElement()
 key: Amelia	key.c_str: Amelia
 Key: 	Hash: 2352401577673
-elements_amount: 83	countUsedIndexes: 16
+elements_amount: 19	countUsedIndexes: 14
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2352401577673,	key: Amelia,	data: Journalist	Id: 73	Size: 128
+Hash: 2352401577673,	key: Amelia,	data: Subaru Forester	Id: 17
+	Size: 26
 
 #
-Id: 73	 Elements:
-Hash: 2352401577673,	key: Amelia,	data: Journalist	#
+Id: 17
+	 Elements:
+Hash: 2352401577673,	key: Amelia,	data: Subaru Forester	Hash: 1294999,	key: Mia,	data: Dodge Charger	Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi	#
 addElement()
 key: Andrew	key.c_str: Andrew
 Key: 	Hash: 2352676453217
-elements_amount: 84	countUsedIndexes: 17
+elements_amount: 20	countUsedIndexes: 14
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2352676453217,	key: Andrew,	data: Electrician	Id: 97	Size: 128
+Hash: 2352676453217,	key: Andrew,	data: Subaru Impreza	Id: 25
+	Size: 26
 
 #
-Id: 97	 Elements:
-Hash: 2352676453217,	key: Andrew,	data: Electrician	#
+Id: 25
+	 Elements:
+Hash: 2352676453217,	key: Andrew,	data: Subaru Impreza	#
 addElement()
 key: Abigail	key.c_str: Abigail
 Key: 	Hash: 303067946777769
-elements_amount: 85	countUsedIndexes: 18
+elements_amount: 21	countUsedIndexes: 15
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 303067946777769,	key: Abigail,	data: Plumber	Id: 41	Size: 128
+Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer	Id: 17
+	Size: 26
 
 #
-Id: 41	 Elements:
-Hash: 303067946777769,	key: Abigail,	data: Plumber	#
+Id: 17
+	 Elements:
+Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer	Hash: 2352401577673,	key: Amelia,	data: Subaru Forester	Hash: 1294999,	key: Mia,	data: Dodge Charger	Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi	#
 addElement()
 key: Lucas	key.c_str: Lucas
 Key: 	Hash: 21298961656
-elements_amount: 86	countUsedIndexes: 19
+elements_amount: 22	countUsedIndexes: 15
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 21298961656,	key: Lucas,	data: Carpenter	Id: 120	Size: 128
+Hash: 21298961656,	key: Lucas,	data: BMW M5 F90	Id: 24
+	Size: 26
 
 #
-Id: 120	 Elements:
-Hash: 21298961656,	key: Lucas,	data: Carpenter	#
+Id: 24
+	 Elements:
+Hash: 21298961656,	key: Lucas,	data: BMW M5 F90	Hash: 358334581853402,	key: Matthew,	data: Toyota Corolla	#
 addElement()
 key: Harper	key.c_str: Harper
 Key: 	Hash: 2599167837666
-elements_amount: 87	countUsedIndexes: 20
+elements_amount: 23	countUsedIndexes: 15
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2599167837666,	key: Harper,	data: Painter	Id: 98	Size: 128
+Hash: 2599167837666,	key: Harper,	data: Mazda 636	Id: 10
+	Size: 26
 
 #
-Id: 98	 Elements:
-Hash: 2599167837666,	key: Harper,	data: Painter	#
+Id: 10
+	 Elements:
+Hash: 2599167837666,	key: Harper,	data: Mazda 636	Hash: 141345162,	key: Alex,	data: Dodge RAM	#
 addElement()
 key: Joseph	key.c_str: Joseph
 Key: 	Hash: 2674492826345
-elements_amount: 88	countUsedIndexes: 21
+elements_amount: 24	countUsedIndexes: 15
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2674492826345,	key: Joseph,	data: Truck driver	Id: 105	Size: 128
+Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter	Id: 15
+	Size: 26
 
 #
-Id: 105	 Elements:
-Hash: 2674492826345,	key: Joseph,	data: Truck driver	#
+Id: 15
+	 Elements:
+Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter	#
 addElement()
 key: Evelyn	key.c_str: Evelyn
 Key: 	Hash: 2497786092275
-elements_amount: 89	countUsedIndexes: 22
+elements_amount: 25	countUsedIndexes: 16
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 2497786092275,	key: Evelyn,	data: Police officer	Id: 115	Size: 128
+Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria	Id: 19
+	Size: 26
 
 #
-Id: 115	 Elements:
-Hash: 2497786092275,	key: Evelyn,	data: Police officer	#
+Id: 19
+	 Elements:
+Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria	Hash: 358615632700851,	key: Michael,	data: Honda Civic 8	#
 addElement()
 key: Samuel	key.c_str: Samuel
 Key: 	Hash: 2992110755559
-elements_amount: 90	countUsedIndexes: 23
+elements_amount: 26	countUsedIndexes: 16
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 2992110755559,	key: Samuel,	data: Firefighter	Id: 103	Size: 128
+rehashAmountFlag 01
+Hash: 2992110755559,	key: Samuel,	data: LADA 21031	Id: 3
+	Size: 26
 
 #
-Id: 103	 Elements:
-Hash: 2992110755559,	key: Samuel,	data: Firefighter	#
+Id: 3
+	 Elements:
+Hash: 2992110755559,	key: Samuel,	data: LADA 21031	#
 addElement()
 key: Emily	key.c_str: Emily
 Key: 	Hash: 19343429248
-elements_amount: 91	countUsedIndexes: 24
+elements_amount: 27	countUsedIndexes: 17
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 19343429248,	key: Emily,	data: Paramedic	Id: 0	Size: 128
+rehashAmountFlag 01
+Hash: 19343429248,	key: Emily,	data: Porsche Panamera	Id: 0
+	Size: 26
 
 #
-Id: 0	 Elements:
-Hash: 19343429248,	key: Emily,	data: Paramedic	Hash: 149949568,	key: Emma,	data: Musician	#
+Id: 0
+	 Elements:
+Hash: 19343429248,	key: Emily,	data: Porsche Panamera	#
 addElement()
 key: Christopher	key.c_str: Christopher
 Key: 	Hash: 5091980017461607051
-elements_amount: 92	countUsedIndexes: 24
+elements_amount: 28	countUsedIndexes: 18
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 5091980017461607051,	key: Christopher,	data: Flight attendant	Id: 11	Size: 128
+rehashAmountFlag 01
+Hash: 5091980017461607051,	key: Christopher,	data: Pontiac Firebird	Id: 15
+	Size: 26
 
 #
-Id: 11	 Elements:
-Hash: 5091980017461607051,	key: Christopher,	data: Flight attendant	#
+Id: 15
+	 Elements:
+Hash: 5091980017461607051,	key: Christopher,	data: Pontiac Firebird	Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter	#
 addElement()
 key: Ella	key.c_str: Ella
 Key: 	Hash: 149932798
-elements_amount: 93	countUsedIndexes: 25
+elements_amount: 29	countUsedIndexes: 18
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 149932798,	key: Ella,	data: Tour guide	Id: 126	Size: 128
+rehashAmountFlag 01
+Hash: 149932798,	key: Ella,	data: Ford Probe	Id: 2
+	Size: 26
 
 #
-Id: 126	 Elements:
-Hash: 149932798,	key: Ella,	data: Tour guide	#
+Id: 2
+	 Elements:
+Hash: 149932798,	key: Ella,	data: Ford Probe	Hash: 149949568,	key: Emma,	data: BMW e63	Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7	#
 addElement()
 key: Jacob	key.c_str: Jacob
 Key: 	Hash: 20702183903
-elements_amount: 94	countUsedIndexes: 26
+elements_amount: 30	countUsedIndexes: 18
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 20702183903,	key: Jacob,	data: Librarian	Id: 95	Size: 128
+rehashAmountFlag 01
+Hash: 20702183903,	key: Jacob,	data: Lincoln Continental	Id: 11
+	Size: 26
 
 #
-Id: 95	 Elements:
-Hash: 20702183903,	key: Jacob,	data: Librarian	#
+Id: 11
+	 Elements:
+Hash: 20702183903,	key: Jacob,	data: Lincoln Continental	#
 addElement()
 key: Grace	key.c_str: Grace
 Key: 	Hash: 19907874146
-elements_amount: 95	countUsedIndexes: 27
+elements_amount: 31	countUsedIndexes: 19
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 19907874146,	key: Grace,	data: Construction worker	Id: 98	Size: 128
+rehashAmountFlag 01
+Hash: 19907874146,	key: Grace,	data: Cadillac Fleetwood	Id: 4
+	Size: 26
 
 #
-Id: 98	 Elements:
-Hash: 19907874146,	key: Grace,	data: Construction worker	Hash: 2599167837666,	key: Harper,	data: Painter	#
+Id: 4
+	 Elements:
+Hash: 19907874146,	key: Grace,	data: Cadillac Fleetwood	#
 addElement()
 key: Willy	key.c_str: Willy
 Key: 	Hash: 24319504273
-elements_amount: 96	countUsedIndexes: 27
+elements_amount: 32	countUsedIndexes: 20
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 24319504273,	key: Willy,	data: Waitress	Id: 17	Size: 128
+rehashAmountFlag 01
+Hash: 24319504273,	key: Willy,	data: Chevrolet Corvair	Id: 25
+	Size: 26
 
 #
-Id: 17	 Elements:
-Hash: 24319504273,	key: Willy,	data: Waitress	#
+Id: 25
+	 Elements:
+Hash: 24319504273,	key: Willy,	data: Chevrolet Corvair	Hash: 2352676453217,	key: Andrew,	data: Subaru Impreza	#
 addElement()
 key: Sophie	key.c_str: Sophie
 Key: 	Hash: 2995993900136
-elements_amount: 97	countUsedIndexes: 28
+elements_amount: 33	countUsedIndexes: 20
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 2995993900136,	key: Sophie,	data: Hairdresser	Id: 104	Size: 128
+rehashAmountFlag 01
+Hash: 2995993900136,	key: Sophie,	data: Chevrolet Camaro	Id: 16
+	Size: 26
 
 #
-Id: 104	 Elements:
-Hash: 2995993900136,	key: Sophie,	data: Hairdresser	Hash: 19040962024,	key: David,	data: Salesperson	Hash: 19343429224,	key: Emila,	data: Programmer	#
+Id: 16
+	 Elements:
+Hash: 2995993900136,	key: Sophie,	data: Chevrolet Camaro	#
 addElement()
 key: Ryan	key.c_str: Ryan
 Key: 	Hash: 178054682
-elements_amount: 98	countUsedIndexes: 28
+elements_amount: 34	countUsedIndexes: 21
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 178054682,	key: Ryan,	data: Cleaner	Id: 26	Size: 128
+rehashAmountFlag 01
+Hash: 178054682,	key: Ryan,	data: Chevrolet Corvette C6	Id: 0
+	Size: 26
 
 #
-Id: 26	 Elements:
-Hash: 178054682,	key: Ryan,	data: Cleaner	#
+Id: 0
+	 Elements:
+Hash: 178054682,	key: Ryan,	data: Chevrolet Corvette C6	Hash: 19343429248,	key: Emily,	data: Porsche Panamera	#
 addElement()
 key: Chloe	key.c_str: Chloe
 Key: 	Hash: 18778900331
-elements_amount: 99	countUsedIndexes: 29
+elements_amount: 35	countUsedIndexes: 21
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 18778900331,	key: Chloe,	data: Administrative assistant	Id: 107	Size: 128
+rehashAmountFlag 01
+Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro	Id: 9
+	Size: 26
 
 #
-Id: 107	 Elements:
-Hash: 18778900331,	key: Chloe,	data: Administrative assistant	#
+Id: 9
+	 Elements:
+Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro	#
 addElement()
 key: Gabriel	key.c_str: Gabriel
 Key: 	Hash: 330679950988470
-elements_amount: 100	countUsedIndexes: 30
+elements_amount: 36	countUsedIndexes: 22
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 330679950988470,	key: Gabriel,	data: Graphic designer	Id: 54	Size: 128
+rehashAmountFlag 01
+Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100	Id: 18
+	Size: 26
 
 #
-Id: 54	 Elements:
-Hash: 330679950988470,	key: Gabriel,	data: Graphic designer	#
+Id: 18
+	 Elements:
+Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100	Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34	Hash: 1096984,	key: Ava,	data: Audi A6	Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	#
 addElement()
 key: Victoria	key.c_str: Victoria
 Key: 	Hash: 51611625694173121
-elements_amount: 101	countUsedIndexes: 31
+elements_amount: 37	countUsedIndexes: 22
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 51611625694173121,	key: Victoria,	data: Web developer	Id: 65	Size: 128
+rehashAmountFlag 01
+Hash: 51611625694173121,	key: Victoria,	data: Mitsubishi Galant	Id: 5
+	Size: 26
 
 #
-Id: 65	 Elements:
-Hash: 51611625694173121,	key: Victoria,	data: Web developer	#
+Id: 5
+	 Elements:
+Hash: 51611625694173121,	key: Victoria,	data: Mitsubishi Galant	Hash: 2456266927821,	key: Daniel,	data: Volkswagen Golf 8	#
 addElement()
 key: Nicholas	key.c_str: Nicholas
 Key: 	Hash: 46855883951069617
-elements_amount: 102	countUsedIndexes: 32
+elements_amount: 38	countUsedIndexes: 22
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 46855883951069617,	key: Nicholas,	data: Data analyst	Id: 49	Size: 128
+rehashAmountFlag 01
+Hash: 46855883951069617,	key: Nicholas,	data: SAAB 9-3	Id: 21
+	Size: 26
 
 #
-Id: 49	 Elements:
-Hash: 46855883951069617,	key: Nicholas,	data: Data analyst	#
+Id: 21
+	 Elements:
+Hash: 46855883951069617,	key: Nicholas,	data: SAAB 9-3	Hash: 404700870353359,	key: William,	data: Buick Riviera 1965	#
 addElement()
 key: Zoe	key.c_str: Zoe
 Key: 	Hash: 1512110
-elements_amount: 103	countUsedIndexes: 33
+elements_amount: 39	countUsedIndexes: 22
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 1512110,	key: Zoe,	data: Marketing specialist	Id: 46	Size: 128
+rehashAmountFlag 01
+Hash: 1512110,	key: Zoe,	data: Volvo 200	Id: 2
+	Size: 26
 
 #
-Id: 46	 Elements:
-Hash: 1512110,	key: Zoe,	data: Marketing specialist	#
+Id: 2
+	 Elements:
+Hash: 1512110,	key: Zoe,	data: Volvo 200	Hash: 149932798,	key: Ella,	data: Ford Probe	Hash: 149949568,	key: Emma,	data: BMW e63	Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7	#
 addElement()
 key: Luke	key.c_str: Luke
 Key: 	Hash: 165109265
-elements_amount: 104	countUsedIndexes: 34
+elements_amount: 40	countUsedIndexes: 22
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 165109265,	key: Luke,	data: Human resources specialist	Id: 17	Size: 128
+rehashAmountFlag 01
+Hash: 165109265,	key: Luke,	data: AMC Gremlin	Id: 9
+	Size: 26
 
 #
-Id: 17	 Elements:
-Hash: 165109265,	key: Luke,	data: Human resources specialist	Hash: 24319504273,	key: Willy,	data: Waitress	#
+Id: 9
+	 Elements:
+Hash: 165109265,	key: Luke,	data: AMC Gremlin	Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro	#
 addElement()
 key: Lily	key.c_str: Lily
 Key: 	Hash: 164909722
-elements_amount: 105	countUsedIndexes: 34
+elements_amount: 41	countUsedIndexes: 22
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 164909722,	key: Lily,	data: Consultant	Id: 26	Size: 128
+rehashAmountFlag 01
+Hash: 164909722,	key: Lily,	data: Opel Diplomat	Id: 16
+	Size: 26
 
 #
-Id: 26	 Elements:
-Hash: 164909722,	key: Lily,	data: Consultant	Hash: 178054682,	key: Ryan,	data: Cleaner	#
+Id: 16
+	 Elements:
+Hash: 164909722,	key: Lily,	data: Opel Diplomat	Hash: 2995993900136,	key: Sophie,	data: Chevrolet Camaro	#
 addElement()
 key: Nathan	key.c_str: Nathan
 Key: 	Hash: 2813510307290
-elements_amount: 106	countUsedIndexes: 34
+elements_amount: 42	countUsedIndexes: 22
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 2813510307290,	key: Nathan,	data: Social worker	Id: 90	Size: 128
+rehashAmountFlag 01
+Hash: 2813510307290,	key: Nathan,	data: Nissan Z350	Id: 20
+	Size: 26
 
 #
-Id: 90	 Elements:
-Hash: 2813510307290,	key: Nathan,	data: Social worker	Hash: 358334581853402,	key: Matthew,	data: Architect	#
+Id: 20
+	 Elements:
+Hash: 2813510307290,	key: Nathan,	data: Nissan Z350	#
 addElement()
 key: Lila	key.c_str: Lila
 Key: 	Hash: 164909698
-elements_amount: 107	countUsedIndexes: 34
+elements_amount: 43	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 164909698,	key: Lila,	data: Psychologist	Id: 2	Size: 128
+rehashAmountFlag 01
+Hash: 164909698,	key: Lila,	data: Mercury Marauder	Id: 18
+	Size: 26
 
 #
-Id: 2	 Elements:
-Hash: 164909698,	key: Lila,	data: Psychologist	#
+Id: 18
+	 Elements:
+Hash: 164909698,	key: Lila,	data: Mercury Marauder	Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100	Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34	Hash: 1096984,	key: Ava,	data: Audi A6	Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	#
 addElement()
 key: Anthony	key.c_str: Anthony
 Key: 	Hash: 303499671929569
-elements_amount: 108	countUsedIndexes: 35
+elements_amount: 44	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 303499671929569,	key: Anthony,	data: Professor	Id: 97	Size: 128
+rehashAmountFlag 01
+Hash: 303499671929569,	key: Anthony,	data: Rover 75	Id: 11
+	Size: 26
 
 #
-Id: 97	 Elements:
-Hash: 303499671929569,	key: Anthony,	data: Professor	Hash: 2352676453217,	key: Andrew,	data: Electrician	#
+Id: 11
+	 Elements:
+Hash: 303499671929569,	key: Anthony,	data: Rover 75	Hash: 20702183903,	key: Jacob,	data: Lincoln Continental	#
 addElement()
 key: Layla	key.c_str: Layla
 Key: 	Hash: 21256395379
-elements_amount: 109	countUsedIndexes: 35
+elements_amount: 45	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 21256395379,	key: Layla,	data: Researcher	Id: 115	Size: 128
+rehashAmountFlag 01
+Hash: 21256395379,	key: Layla,	data: Alfa Romeo 156	Id: 11
+	Size: 26
 
 #
-Id: 115	 Elements:
-Hash: 21256395379,	key: Layla,	data: Researcher	Hash: 2497786092275,	key: Evelyn,	data: Police officer	#
+Id: 11
+	 Elements:
+Hash: 21256395379,	key: Layla,	data: Alfa Romeo 156	Hash: 303499671929569,	key: Anthony,	data: Rover 75	Hash: 20702183903,	key: Jacob,	data: Lincoln Continental	#
 addElement()
 key: Max	key.c_str: Max
 Key: 	Hash: 1293990
-elements_amount: 110	countUsedIndexes: 35
+elements_amount: 46	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 1293990,	key: Max,	data: Military service member	Id: 38	Size: 128
+rehashAmountFlag 01
+Hash: 1293990,	key: Max,	data: Land Rover Defender 110	Id: 22
+	Size: 26
 
 #
-Id: 38	 Elements:
-Hash: 1293990,	key: Max,	data: Military service member	Hash: 5200256600009926694,	key: Charlotte,	data: Farmer	#
+Id: 22
+	 Elements:
+Hash: 1293990,	key: Max,	data: Land Rover Defender 110	Hash: 39704236703904548,	key: Benjamin,	data: BMW X7	Hash: 20702349040,	key: James,	data: Mini Clubman	#
 addElement()
 key: Aria	key.c_str: Aria
 Key: 	Hash: 141445501
-elements_amount: 111	countUsedIndexes: 35
+elements_amount: 47	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 141445501,	key: Aria,	data: Judge	Id: 125	Size: 128
+rehashAmountFlag 01
+Hash: 141445501,	key: Aria,	data: BMW e65	Id: 15
+	Size: 26
 
 #
-Id: 125	 Elements:
-Hash: 141445501,	key: Aria,	data: Judge	#
+Id: 15
+	 Elements:
+Hash: 141445501,	key: Aria,	data: BMW e65	Hash: 5091980017461607051,	key: Christopher,	data: Pontiac Firebird	Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter	#
 addElement()
 key: Kevin	key.c_str: Kevin
 Key: 	Hash: 20988008957
-elements_amount: 112	countUsedIndexes: 36
+elements_amount: 48	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 20988008957,	key: Kevin,	data: Real estate agent	Id: 125	Size: 128
+rehashAmountFlag 01
+Hash: 20988008957,	key: Kevin,	data: Crysler 300M	Id: 19
+	Size: 26
 
 #
-Id: 125	 Elements:
-Hash: 20988008957,	key: Kevin,	data: Real estate agent	Hash: 141445501,	key: Aria,	data: Judge	#
+Id: 19
+	 Elements:
+Hash: 20988008957,	key: Kevin,	data: Crysler 300M	Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria	Hash: 358615632700851,	key: Michael,	data: Honda Civic 8	#
 addElement()
 key: Avery	key.c_str: Avery
 Key: 	Hash: 18254992135
-elements_amount: 113	countUsedIndexes: 36
+elements_amount: 49	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 18254992135,	key: Avery,	data: Interior designer	Id: 7	Size: 128
+rehashAmountFlag 01
+Hash: 18254992135,	key: Avery,	data: Lancia Kappa	Id: 3
+	Size: 26
 
 #
-Id: 7	 Elements:
-Hash: 18254992135,	key: Avery,	data: Interior designer	#
+Id: 3
+	 Elements:
+Hash: 18254992135,	key: Avery,	data: Lancia Kappa	Hash: 2992110755559,	key: Samuel,	data: LADA 21031	#
 addElement()
 key: Eric	key.c_str: Eric
 Key: 	Hash: 150032259
-elements_amount: 114	countUsedIndexes: 37
+elements_amount: 50	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 150032259,	key: Eric,	data: Event planner	Id: 3	Size: 128
+rehashAmountFlag 01
+Hash: 150032259,	key: Eric,	data: Citroen XM	Id: 13
+	Size: 26
 
 #
-Id: 3	 Elements:
-Hash: 150032259,	key: Eric,	data: Event planner	#
+Id: 13
+	 Elements:
+Hash: 150032259,	key: Eric,	data: Citroen XM	Hash: 43929557046135709,	key: Isabella,	data: Mercedes-Benz CLS350	#
 addElement()
 key: Eleanor	key.c_str: Eleanor
 Key: 	Hash: 321857151590598
-elements_amount: 115	countUsedIndexes: 38
+elements_amount: 51	countUsedIndexes: 23
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 321857151590598,	key: Eleanor,	data: Photographer	Id: 70	Size: 128
+rehashAmountFlag 01
+Hash: 321857151590598,	key: Eleanor,	data: Jeep Cherokee XJ	Id: 0
+	Size: 26
 
 #
-Id: 70	 Elements:
-Hash: 321857151590598,	key: Eleanor,	data: Photographer	#
+Id: 0
+	 Elements:
+Hash: 321857151590598,	key: Eleanor,	data: Jeep Cherokee XJ	Hash: 178054682,	key: Ryan,	data: Chevrolet Corvette C6	Hash: 19343429248,	key: Emily,	data: Porsche Panamera	#
 addElement()
 key: Mark	key.c_str: Mark
 Key: 	Hash: 166924043
-elements_amount: 116	countUsedIndexes: 39
+elements_amount: 52	countUsedIndexes: 23
+rehashSizeFlag 00
+rehashAmountFlag 12
+rehash()
+elements_amount: 0	countUsedIndexes: 0
 rehashSizeFlag 00
 rehashAmountFlag 00
-Hash: 166924043,	key: Mark,	data: Artist	Id: 11	Size: 128
+Hash: 321857151590598,	key: Eleanor,	data: Jeep Cherokee XJ	Id: 26
+	Size: 52
 
 #
-Id: 11	 Elements:
-Hash: 166924043,	key: Mark,	data: Artist	Hash: 5091980017461607051,	key: Christopher,	data: Flight attendant	#
+Id: 26
+	 Elements:
+Hash: 321857151590598,	key: Eleanor,	data: Jeep Cherokee XJ	#
+elements_amount: 1	countUsedIndexes: 1
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 178054682,	key: Ryan,	data: Chevrolet Corvette C6	Id: 26
+	Size: 52
+
+#
+Id: 26
+	 Elements:
+Hash: 178054682,	key: Ryan,	data: Chevrolet Corvette C6	Hash: 321857151590598,	key: Eleanor,	data: Jeep Cherokee XJ	#
+elements_amount: 2	countUsedIndexes: 1
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 19343429248,	key: Emily,	data: Porsche Panamera	Id: 0
+	Size: 52
+
+#
+Id: 0
+	 Elements:
+Hash: 19343429248,	key: Emily,	data: Porsche Panamera	#
+elements_amount: 3	countUsedIndexes: 2
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 166924057,	key: Mary,	data: Fiat Punto	Id: 1
+	Size: 52
+
+#
+Id: 1
+	 Elements:
+Hash: 166924057,	key: Mary,	data: Fiat Punto	#
+elements_amount: 4	countUsedIndexes: 3
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 1512110,	key: Zoe,	data: Volvo 200	Id: 2
+	Size: 52
+
+#
+Id: 2
+	 Elements:
+Hash: 1512110,	key: Zoe,	data: Volvo 200	#
+elements_amount: 5	countUsedIndexes: 4
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 149932798,	key: Ella,	data: Ford Probe	Id: 2
+	Size: 52
+
+#
+Id: 2
+	 Elements:
+Hash: 149932798,	key: Ella,	data: Ford Probe	Hash: 1512110,	key: Zoe,	data: Volvo 200	#
+elements_amount: 6	countUsedIndexes: 4
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 149949568,	key: Emma,	data: BMW e63	Id: 28
+	Size: 52
+
+#
+Id: 28
+	 Elements:
+Hash: 149949568,	key: Emma,	data: BMW e63	#
+elements_amount: 7	countUsedIndexes: 5
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7	Id: 28
+	Size: 52
+
+#
+Id: 28
+	 Elements:
+Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7	Hash: 149949568,	key: Emma,	data: BMW e63	#
+elements_amount: 8	countUsedIndexes: 5
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 18254992135,	key: Avery,	data: Lancia Kappa	Id: 3
+	Size: 52
+
+#
+Id: 3
+	 Elements:
+Hash: 18254992135,	key: Avery,	data: Lancia Kappa	#
+elements_amount: 9	countUsedIndexes: 6
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2992110755559,	key: Samuel,	data: LADA 21031	Id: 3
+	Size: 52
+
+#
+Id: 3
+	 Elements:
+Hash: 2992110755559,	key: Samuel,	data: LADA 21031	Hash: 18254992135,	key: Avery,	data: Lancia Kappa	#
+elements_amount: 10	countUsedIndexes: 6
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 19907874146,	key: Grace,	data: Cadillac Fleetwood	Id: 30
+	Size: 52
+
+#
+Id: 30
+	 Elements:
+Hash: 19907874146,	key: Grace,	data: Cadillac Fleetwood	#
+elements_amount: 11	countUsedIndexes: 7
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 51611625694173121,	key: Victoria,	data: Mitsubishi Galant	Id: 5
+	Size: 52
+
+#
+Id: 5
+	 Elements:
+Hash: 51611625694173121,	key: Victoria,	data: Mitsubishi Galant	#
+elements_amount: 12	countUsedIndexes: 8
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2456266927821,	key: Daniel,	data: Volkswagen Golf 8	Id: 5
+	Size: 52
+
+#
+Id: 5
+	 Elements:
+Hash: 2456266927821,	key: Daniel,	data: Volkswagen Golf 8	Hash: 51611625694173121,	key: Victoria,	data: Mitsubishi Galant	#
+elements_amount: 13	countUsedIndexes: 8
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 19040962024,	key: David,	data: Peugeot 308	Id: 32
+	Size: 52
+
+#
+Id: 32
+	 Elements:
+Hash: 19040962024,	key: David,	data: Peugeot 308	#
+elements_amount: 14	countUsedIndexes: 9
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2852256131044,	key: Olivia,	data: Ford Scorpio	Id: 8
+	Size: 52
+
+#
+Id: 8
+	 Elements:
+Hash: 2852256131044,	key: Olivia,	data: Ford Scorpio	#
+elements_amount: 15	countUsedIndexes: 10
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 165109265,	key: Luke,	data: AMC Gremlin	Id: 9
+	Size: 52
+
+#
+Id: 9
+	 Elements:
+Hash: 165109265,	key: Luke,	data: AMC Gremlin	#
+elements_amount: 16	countUsedIndexes: 11
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro	Id: 35
+	Size: 52
+
+#
+Id: 35
+	 Elements:
+Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro	#
+elements_amount: 17	countUsedIndexes: 12
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2599167837666,	key: Harper,	data: Mazda 636	Id: 10
+	Size: 52
+
+#
+Id: 10
+	 Elements:
+Hash: 2599167837666,	key: Harper,	data: Mazda 636	#
+elements_amount: 18	countUsedIndexes: 13
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 141345162,	key: Alex,	data: Dodge RAM	Id: 10
+	Size: 52
+
+#
+Id: 10
+	 Elements:
+Hash: 141345162,	key: Alex,	data: Dodge RAM	Hash: 2599167837666,	key: Harper,	data: Mazda 636	#
+elements_amount: 19	countUsedIndexes: 13
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 21256395379,	key: Layla,	data: Alfa Romeo 156	Id: 11
+	Size: 52
+
+#
+Id: 11
+	 Elements:
+Hash: 21256395379,	key: Layla,	data: Alfa Romeo 156	#
+elements_amount: 20	countUsedIndexes: 14
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 303499671929569,	key: Anthony,	data: Rover 75	Id: 37
+	Size: 52
+
+#
+Id: 37
+	 Elements:
+Hash: 303499671929569,	key: Anthony,	data: Rover 75	#
+elements_amount: 21	countUsedIndexes: 15
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 20702183903,	key: Jacob,	data: Lincoln Continental	Id: 11
+	Size: 52
+
+#
+Id: 11
+	 Elements:
+Hash: 20702183903,	key: Jacob,	data: Lincoln Continental	Hash: 21256395379,	key: Layla,	data: Alfa Romeo 156	#
+elements_amount: 22	countUsedIndexes: 15
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2995993900132,	key: Sophia,	data: Mazda RX-7	Id: 12
+	Size: 52
+
+#
+Id: 12
+	 Elements:
+Hash: 2995993900132,	key: Sophia,	data: Mazda RX-7	#
+elements_amount: 23	countUsedIndexes: 16
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 150032259,	key: Eric,	data: Citroen XM	Id: 39
+	Size: 52
+
+#
+Id: 39
+	 Elements:
+Hash: 150032259,	key: Eric,	data: Citroen XM	#
+elements_amount: 24	countUsedIndexes: 17
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 43929557046135709,	key: Isabella,	data: Mercedes-Benz CLS350	Id: 13
+	Size: 52
+
+#
+Id: 13
+	 Elements:
+Hash: 43929557046135709,	key: Isabella,	data: Mercedes-Benz CLS350	#
+elements_amount: 25	countUsedIndexes: 18
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 141445501,	key: Aria,	data: BMW e65	Id: 41
+	Size: 52
+
+#
+Id: 41
+	 Elements:
+Hash: 141445501,	key: Aria,	data: BMW e65	#
+elements_amount: 26	countUsedIndexes: 19
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 5091980017461607051,	key: Christopher,	data: Pontiac Firebird	Id: 15
+	Size: 52
+
+#
+Id: 15
+	 Elements:
+Hash: 5091980017461607051,	key: Christopher,	data: Pontiac Firebird	#
+elements_amount: 27	countUsedIndexes: 20
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter	Id: 41
+	Size: 52
+
+#
+Id: 41
+	 Elements:
+Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter	Hash: 141445501,	key: Aria,	data: BMW e65	#
+elements_amount: 28	countUsedIndexes: 20
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 164909722,	key: Lily,	data: Opel Diplomat	Id: 42
+	Size: 52
+
+#
+Id: 42
+	 Elements:
+Hash: 164909722,	key: Lily,	data: Opel Diplomat	#
+elements_amount: 29	countUsedIndexes: 21
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2995993900136,	key: Sophie,	data: Chevrolet Camaro	Id: 16
+	Size: 52
+
+#
+Id: 16
+	 Elements:
+Hash: 2995993900136,	key: Sophie,	data: Chevrolet Camaro	#
+elements_amount: 30	countUsedIndexes: 22
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer	Id: 17
+	Size: 52
+
+#
+Id: 17
+	 Elements:
+Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer	#
+elements_amount: 31	countUsedIndexes: 23
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2352401577673,	key: Amelia,	data: Subaru Forester	Id: 17
+	Size: 52
+
+#
+Id: 17
+	 Elements:
+Hash: 2352401577673,	key: Amelia,	data: Subaru Forester	Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer	#
+elements_amount: 32	countUsedIndexes: 23
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 1294999,	key: Mia,	data: Dodge Charger	Id: 43
+	Size: 52
+
+#
+Id: 43
+	 Elements:
+Hash: 1294999,	key: Mia,	data: Dodge Charger	#
+elements_amount: 33	countUsedIndexes: 24
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi	Id: 43
+	Size: 52
+
+#
+Id: 43
+	 Elements:
+Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi	Hash: 1294999,	key: Mia,	data: Dodge Charger	#
+elements_amount: 34	countUsedIndexes: 24
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 164909698,	key: Lila,	data: Mercury Marauder	Id: 18
+	Size: 52
+
+#
+Id: 18
+	 Elements:
+Hash: 164909698,	key: Lila,	data: Mercury Marauder	#
+elements_amount: 35	countUsedIndexes: 25
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100	Id: 18
+	Size: 52
+
+#
+Id: 18
+	 Elements:
+Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100	Hash: 164909698,	key: Lila,	data: Mercury Marauder	#
+elements_amount: 36	countUsedIndexes: 25
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34	Id: 18
+	Size: 52
+
+#
+Id: 18
+	 Elements:
+Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34	Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100	Hash: 164909698,	key: Lila,	data: Mercury Marauder	#
+elements_amount: 37	countUsedIndexes: 25
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 1096984,	key: Ava,	data: Audi A6	Id: 44
+	Size: 52
+
+#
+Id: 44
+	 Elements:
+Hash: 1096984,	key: Ava,	data: Audi A6	#
+elements_amount: 38	countUsedIndexes: 26
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	Id: 44
+	Size: 52
+
+#
+Id: 44
+	 Elements:
+Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA	Hash: 1096984,	key: Ava,	data: Audi A6	#
+elements_amount: 39	countUsedIndexes: 26
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 20988008957,	key: Kevin,	data: Crysler 300M	Id: 45
+	Size: 52
+
+#
+Id: 45
+	 Elements:
+Hash: 20988008957,	key: Kevin,	data: Crysler 300M	#
+elements_amount: 40	countUsedIndexes: 27
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria	Id: 19
+	Size: 52
+
+#
+Id: 19
+	 Elements:
+Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria	#
+elements_amount: 41	countUsedIndexes: 28
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 358615632700851,	key: Michael,	data: Honda Civic 8	Id: 19
+	Size: 52
+
+#
+Id: 19
+	 Elements:
+Hash: 358615632700851,	key: Michael,	data: Honda Civic 8	Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria	#
+elements_amount: 42	countUsedIndexes: 28
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2813510307290,	key: Nathan,	data: Nissan Z350	Id: 46
+	Size: 52
+
+#
+Id: 46
+	 Elements:
+Hash: 2813510307290,	key: Nathan,	data: Nissan Z350	#
+elements_amount: 43	countUsedIndexes: 29
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 46855883951069617,	key: Nicholas,	data: SAAB 9-3	Id: 21
+	Size: 52
+
+#
+Id: 21
+	 Elements:
+Hash: 46855883951069617,	key: Nicholas,	data: SAAB 9-3	#
+elements_amount: 44	countUsedIndexes: 30
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 404700870353359,	key: William,	data: Buick Riviera 1965	Id: 47
+	Size: 52
+
+#
+Id: 47
+	 Elements:
+Hash: 404700870353359,	key: William,	data: Buick Riviera 1965	#
+elements_amount: 45	countUsedIndexes: 31
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 1293990,	key: Max,	data: Land Rover Defender 110	Id: 22
+	Size: 52
+
+#
+Id: 22
+	 Elements:
+Hash: 1293990,	key: Max,	data: Land Rover Defender 110	#
+elements_amount: 46	countUsedIndexes: 32
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 39704236703904548,	key: Benjamin,	data: BMW X7	Id: 48
+	Size: 52
+
+#
+Id: 48
+	 Elements:
+Hash: 39704236703904548,	key: Benjamin,	data: BMW X7	#
+elements_amount: 47	countUsedIndexes: 33
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 20702349040,	key: James,	data: Mini Clubman	Id: 48
+	Size: 52
+
+#
+Id: 48
+	 Elements:
+Hash: 20702349040,	key: James,	data: Mini Clubman	Hash: 39704236703904548,	key: Benjamin,	data: BMW X7	#
+elements_amount: 48	countUsedIndexes: 33
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 21298961656,	key: Lucas,	data: BMW M5 F90	Id: 24
+	Size: 52
+
+#
+Id: 24
+	 Elements:
+Hash: 21298961656,	key: Lucas,	data: BMW M5 F90	#
+elements_amount: 49	countUsedIndexes: 34
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 358334581853402,	key: Matthew,	data: Toyota Corolla	Id: 50
+	Size: 52
+
+#
+Id: 50
+	 Elements:
+Hash: 358334581853402,	key: Matthew,	data: Toyota Corolla	#
+elements_amount: 50	countUsedIndexes: 35
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 24319504273,	key: Willy,	data: Chevrolet Corvair	Id: 25
+	Size: 52
+
+#
+Id: 25
+	 Elements:
+Hash: 24319504273,	key: Willy,	data: Chevrolet Corvair	#
+elements_amount: 51	countUsedIndexes: 36
+rehashSizeFlag 00
+rehashAmountFlag 00
+Hash: 2352676453217,	key: Andrew,	data: Subaru Impreza	Id: 25
+	Size: 52
+
+#
+Id: 25
+	 Elements:
+Hash: 2352676453217,	key: Andrew,	data: Subaru Impreza	Hash: 24319504273,	key: Willy,	data: Chevrolet Corvair	#
+Hash: 19343429248,	key: Emily,	data: Porsche Panamera
+Hash: 166924057,	key: Mary,	data: Fiat Punto
+Collision of elements with hash 149932798
+Hash: 149932798,	key: Ella,	data: Ford Probe
+Hash: 1512110,	key: Zoe,	data: Volvo 200
+Collision of elements with hash 2992110755559
+Hash: 2992110755559,	key: Samuel,	data: LADA 21031
+Hash: 18254992135,	key: Avery,	data: Lancia Kappa
+Collision of elements with hash 2456266927821
+Hash: 2456266927821,	key: Daniel,	data: Volkswagen Golf 8
+Hash: 51611625694173121,	key: Victoria,	data: Mitsubishi Galant
+Hash: 2852256131044,	key: Olivia,	data: Ford Scorpio
+Hash: 165109265,	key: Luke,	data: AMC Gremlin
+Collision of elements with hash 141345162
+Hash: 141345162,	key: Alex,	data: Dodge RAM
+Hash: 2599167837666,	key: Harper,	data: Mazda 636
+Collision of elements with hash 20702183903
+Hash: 20702183903,	key: Jacob,	data: Lincoln Continental
+Hash: 21256395379,	key: Layla,	data: Alfa Romeo 156
+Hash: 2995993900132,	key: Sophia,	data: Mazda RX-7
+Hash: 43929557046135709,	key: Isabella,	data: Mercedes-Benz CLS350
+Hash: 5091980017461607051,	key: Christopher,	data: Pontiac Firebird
+Hash: 2995993900136,	key: Sophie,	data: Chevrolet Camaro
+Collision of elements with hash 2352401577673
+Hash: 2352401577673,	key: Amelia,	data: Subaru Forester
+Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer
+Collision of elements with hash 5200256600009926694
+Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34
+Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100
+Hash: 164909698,	key: Lila,	data: Mercury Marauder
+Collision of elements with hash 358615632700851
+Hash: 358615632700851,	key: Michael,	data: Honda Civic 8
+Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria
+Hash: 46855883951069617,	key: Nicholas,	data: SAAB 9-3
+Hash: 1293990,	key: Max,	data: Land Rover Defender 110
+Hash: 21298961656,	key: Lucas,	data: BMW M5 F90
+Collision of elements with hash 2352676453217
+Hash: 2352676453217,	key: Andrew,	data: Subaru Impreza
+Hash: 24319504273,	key: Willy,	data: Chevrolet Corvair
+Collision of elements with hash 178054682
+Hash: 178054682,	key: Ryan,	data: Chevrolet Corvette C6
+Hash: 321857151590598,	key: Eleanor,	data: Jeep Cherokee XJ
+Collision of elements with hash 19343429224
+Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7
+Hash: 149949568,	key: Emma,	data: BMW e63
+Hash: 19907874146,	key: Grace,	data: Cadillac Fleetwood
+Hash: 19040962024,	key: David,	data: Peugeot 308
+Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro
+Hash: 303499671929569,	key: Anthony,	data: Rover 75
+Hash: 150032259,	key: Eric,	data: Citroen XM
+Collision of elements with hash 2674492826345
+Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter
+Hash: 141445501,	key: Aria,	data: BMW e65
+Hash: 164909722,	key: Lily,	data: Opel Diplomat
+Collision of elements with hash 18225069919
+Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi
+Hash: 1294999,	key: Mia,	data: Dodge Charger
+Collision of elements with hash 19358438000
+Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA
+Hash: 1096984,	key: Ava,	data: Audi A6
+Hash: 20988008957,	key: Kevin,	data: Crysler 300M
+Hash: 2813510307290,	key: Nathan,	data: Nissan Z350
+Hash: 404700870353359,	key: William,	data: Buick Riviera 1965
+Collision of elements with hash 20702349040
+Hash: 20702349040,	key: James,	data: Mini Clubman
+Hash: 39704236703904548,	key: Benjamin,	data: BMW X7
+Hash: 358334581853402,	key: Matthew,	data: Toyota Corolla
+
+Hash: 166924043,	key: Mark,	data: GMC Suburban	Id: 39
+	Size: 52
+
+#
+Id: 39
+	 Elements:
+Hash: 166924043,	key: Mark,	data: GMC Suburban	Hash: 150032259,	key: Eric,	data: Citroen XM	#
 addElement()
 key: Audrey	key.c_str: Audrey
 Key: 	Hash: 2354614913386
-elements_amount: 117	countUsedIndexes: 39
+elements_amount: 53	countUsedIndexes: 36
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 2354614913386,	key: Audrey,	data: Fashion designer	Id: 106	Size: 128
+rehashAmountFlag 01
+Hash: 2354614913386,	key: Audrey,	data: Ford Mustang SN95	Id: 34
+	Size: 52
 
 #
-Id: 106	 Elements:
-Hash: 2354614913386,	key: Audrey,	data: Fashion designer	#
+Id: 34
+	 Elements:
+Hash: 2354614913386,	key: Audrey,	data: Ford Mustang SN95	#
 addElement()
 key: Philip	key.c_str: Philip
 Key: 	Hash: 2886871324774
-elements_amount: 118	countUsedIndexes: 40
+elements_amount: 54	countUsedIndexes: 37
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 2886871324774,	key: Philip,	data: Bartender	Id: 102	Size: 128
+rehashAmountFlag 01
+Hash: 2886871324774,	key: Philip,	data: Ford Orion Mark2	Id: 34
+	Size: 52
 
 #
-Id: 102	 Elements:
-Hash: 2886871324774,	key: Philip,	data: Bartender	#
+Id: 34
+	 Elements:
+Hash: 2886871324774,	key: Philip,	data: Ford Orion Mark2	Hash: 2354614913386,	key: Audrey,	data: Ford Mustang SN95	#
 addElement()
 key: Hannah	key.c_str: Hannah
 Key: 	Hash: 2599159217102
-elements_amount: 119	countUsedIndexes: 41
+elements_amount: 55	countUsedIndexes: 37
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 2599159217102,	key: Hannah,	data: Singer	Id: 78	Size: 128
+rehashAmountFlag 01
+Hash: 2599159217102,	key: Hannah,	data: Audi A8L	Id: 6
+	Size: 52
 
 #
-Id: 78	 Elements:
-Hash: 2599159217102,	key: Hannah,	data: Singer	#
+Id: 6
+	 Elements:
+Hash: 2599159217102,	key: Hannah,	data: Audi A8L	#
 addElement()
 key: Peter	key.c_str: Peter
 Key: 	Hash: 22372589568
-elements_amount: 120	countUsedIndexes: 42
+elements_amount: 56	countUsedIndexes: 38
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 22372589568,	key: Peter,	data: Dancer	Id: 0	Size: 128
+rehashAmountFlag 01
+Hash: 22372589568,	key: Peter,	data: BMW e90	Id: 4
+	Size: 52
 
 #
-Id: 0	 Elements:
-Hash: 22372589568,	key: Peter,	data: Dancer	Hash: 19343429248,	key: Emily,	data: Paramedic	Hash: 149949568,	key: Emma,	data: Musician	#
+Id: 4
+	 Elements:
+Hash: 22372589568,	key: Peter,	data: BMW e90	#
 addElement()
 key: Aurora	key.c_str: Aurora
 Key: 	Hash: 2354644918762
-elements_amount: 121	countUsedIndexes: 42
+elements_amount: 57	countUsedIndexes: 39
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 2354644918762,	key: Aurora,	data: Magician	Id: 106	Size: 128
+rehashAmountFlag 01
+Hash: 2354644918762,	key: Aurora,	data: Renault Logan	Id: 6
+	Size: 52
 
 #
-Id: 106	 Elements:
-Hash: 2354644918762,	key: Aurora,	data: Magician	Hash: 2354614913386,	key: Audrey,	data: Fashion designer	#
+Id: 6
+	 Elements:
+Hash: 2354644918762,	key: Aurora,	data: Renault Logan	Hash: 2599159217102,	key: Hannah,	data: Audi A8L	#
 addElement()
 key: Simon	key.c_str: Simon
 Key: 	Hash: 23211829766
-elements_amount: 122	countUsedIndexes: 42
+elements_amount: 58	countUsedIndexes: 39
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 23211829766,	key: Simon,	data: Stock trader	Id: 6	Size: 128
+rehashAmountFlag 01
+Hash: 23211829766,	key: Simon,	data: Jaguar XJ	Id: 34
+	Size: 52
 
 #
-Id: 6	 Elements:
-Hash: 23211829766,	key: Simon,	data: Stock trader	#
+Id: 34
+	 Elements:
+Hash: 23211829766,	key: Simon,	data: Jaguar XJ	Hash: 2886871324774,	key: Philip,	data: Ford Orion Mark2	Hash: 2354614913386,	key: Audrey,	data: Ford Mustang SN95	#
 addElement()
 key: Bella	key.c_str: Bella
 Key: 	Hash: 18495536992
-elements_amount: 123	countUsedIndexes: 43
+elements_amount: 59	countUsedIndexes: 39
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 18495536992,	key: Bella,	data: Entrepreneur	Id: 96	Size: 128
+rehashAmountFlag 01
+Hash: 18495536992,	key: Bella,	data: Nissan Silvia S14	Id: 36
+	Size: 52
 
 #
-Id: 96	 Elements:
-Hash: 18495536992,	key: Bella,	data: Entrepreneur	#
+Id: 36
+	 Elements:
+Hash: 18495536992,	key: Bella,	data: Nissan Silvia S14	#
 addElement()
 key: Sean	key.c_str: Sean
 Key: 	Hash: 179868551
-elements_amount: 124	countUsedIndexes: 44
+elements_amount: 60	countUsedIndexes: 40
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 179868551,	key: Sean,	data: Gardener	Id: 7	Size: 128
+rehashAmountFlag 01
+Hash: 179868551,	key: Sean,	data: Toyota Corolla AE86	Id: 31
+	Size: 52
 
 #
-Id: 7	 Elements:
-Hash: 179868551,	key: Sean,	data: Gardener	Hash: 18254992135,	key: Avery,	data: Interior designer	#
+Id: 31
+	 Elements:
+Hash: 179868551,	key: Sean,	data: Toyota Corolla AE86	#
 addElement()
 key: Brooklyn	key.c_str: Brooklyn
 Key: 	Hash: 39764181390638288
-elements_amount: 125	countUsedIndexes: 44
+elements_amount: 61	countUsedIndexes: 41
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 39764181390638288,	key: Brooklyn,	data: Coach	Id: 80	Size: 128
+rehashAmountFlag 01
+Hash: 39764181390638288,	key: Brooklyn,	data: Nissan  Maxima A32	Id: 12
+	Size: 52
 
 #
-Id: 80	 Elements:
-Hash: 39764181390638288,	key: Brooklyn,	data: Coach	#
+Id: 12
+	 Elements:
+Hash: 39764181390638288,	key: Brooklyn,	data: Nissan  Maxima A32	Hash: 2995993900132,	key: Sophia,	data: Mazda RX-7	#
 addElement()
 key: Henry	key.c_str: Henry
 Key: 	Hash: 20157108358
-elements_amount: 126	countUsedIndexes: 45
+elements_amount: 62	countUsedIndexes: 41
 rehashSizeFlag 00
-rehashAmountFlag 00
-Hash: 20157108358,	key: Henry,	data: Fitness trainer	Id: 6	Size: 128
+rehashAmountFlag 01
+Hash: 20157108358,	key: Henry,	data: Lancia Delta S4	Id: 10
+	Size: 52
 
 #
-Id: 6	 Elements:
-Hash: 20157108358,	key: Henry,	data: Fitness trainer	Hash: 23211829766,	key: Simon,	data: Stock trader	#
-0
-Collision of elements with hash 22372589568
-Hash: 22372589568,	key: Peter,	data: DancerHash: 19343429248,	key: Emily,	data: ParamedicHash: 149949568,	key: Emma,	data: Musician2
-Hash: 164909698,	key: Lila,	data: Psychologist
-3
-Hash: 150032259,	key: Eric,	data: Event planner
-6
-Collision of elements with hash 20157108358
-Hash: 20157108358,	key: Henry,	data: Fitness trainerHash: 23211829766,	key: Simon,	data: Stock trader7
-Collision of elements with hash 179868551
-Hash: 179868551,	key: Sean,	data: GardenerHash: 18254992135,	key: Avery,	data: Interior designer10
-Hash: 141345162,	key: Alex,	data: Lawyer
-11
-Collision of elements with hash 166924043
-Hash: 166924043,	key: Mark,	data: ArtistHash: 5091980017461607051,	key: Christopher,	data: Flight attendant
-15
-Hash: 160715663,	key: John,	data: Teacher
-17
-Collision of elements with hash 165109265
-Hash: 165109265,	key: Luke,	data: Human resources specialistHash: 24319504273,	key: Willy,	data: Waitress
-23
-Hash: 1294999,	key: Mia,	data: Pharmacist
-24
-Hash: 1096984,	key: Ava,	data: Athlete
-25
-Hash: 166924057,	key: Mary,	data: Doctor
-26
-Collision of elements with hash 164909722
-Hash: 164909722,	key: Lily,	data: ConsultantHash: 178054682,	key: Ryan,	data: Cleaner29
-Hash: 43929557046135709,	key: Isabella,	data: Chef
-36
-Hash: 39704236703904548,	key: Benjamin,	data: Actor
-38
-Collision of elements with hash 1293990
-Hash: 1293990,	key: Max,	data: Military service memberHash: 5200256600009926694,	key: Charlotte,	data: Farmer41
-Hash: 303067946777769,	key: Abigail,	data: Plumber
-46
-Hash: 1512110,	key: Zoe,	data: Marketing specialist
-49
-Hash: 46855883951069617,	key: Nicholas,	data: Data analyst
-51
-Hash: 358615632700851,	key: Michael,	data: Mechanic
-54
-Hash: 330679950988470,	key: Gabriel,	data: Graphic designer
-65
-Hash: 51611625694173121,	key: Victoria,	data: Web developer
-70
-Hash: 321857151590598,	key: Eleanor,	data: Photographer
-73
-Hash: 2352401577673,	key: Amelia,	data: Journalist
-77
-Hash: 2456266927821,	key: Daniel,	data: Dentist
-78
-Hash: 2599159217102,	key: Hannah,	data: Singer
-79
-Hash: 404700870353359,	key: William,	data: Engineer
-80
-Hash: 39764181390638288,	key: Brooklyn,	data: Coach
-90
-Collision of elements with hash 2813510307290
-Hash: 2813510307290,	key: Nathan,	data: Social workerHash: 358334581853402,	key: Matthew,	data: Architect95
-Hash: 20702183903,	key: Jacob,	data: Librarian
-96
-Hash: 18495536992,	key: Bella,	data: Entrepreneur
-97
-Collision of elements with hash 303499671929569
-Hash: 303499671929569,	key: Anthony,	data: ProfessorHash: 2352676453217,	key: Andrew,	data: Electrician98
-Collision of elements with hash 19907874146
-Hash: 19907874146,	key: Grace,	data: Construction workerHash: 2599167837666,	key: Harper,	data: Painter100
-Collision of elements with hash 2995993900132
-Hash: 2995993900132,	key: Sophia,	data: ScientistHash: 2852256131044,	key: Olivia,	data: Writer102
-Hash: 2886871324774,	key: Philip,	data: Bartender
-103
-Hash: 2992110755559,	key: Samuel,	data: Firefighter
-104
-Collision of elements with hash 2995993900136
-Hash: 2995993900136,	key: Sophie,	data: HairdresserHash: 19040962024,	key: David,	data: SalespersonHash: 19343429224,	key: Emila,	data: Programmer105
-Hash: 2674492826345,	key: Joseph,	data: Truck driver
-106
+Id: 10
+	 Elements:
+Hash: 20157108358,	key: Henry,	data: Lancia Delta S4	Hash: 141345162,	key: Alex,	data: Dodge RAM	Hash: 2599167837666,	key: Harper,	data: Mazda 636	#
+Hash: 19343429248,	key: Emily,	data: Porsche Panamera
+Hash: 166924057,	key: Mary,	data: Fiat Punto
+Collision of elements with hash 149932798
+Hash: 149932798,	key: Ella,	data: Ford Probe
+Hash: 1512110,	key: Zoe,	data: Volvo 200
+Collision of elements with hash 2992110755559
+Hash: 2992110755559,	key: Samuel,	data: LADA 21031
+Hash: 18254992135,	key: Avery,	data: Lancia Kappa
+Hash: 22372589568,	key: Peter,	data: BMW e90
+Collision of elements with hash 2456266927821
+Hash: 2456266927821,	key: Daniel,	data: Volkswagen Golf 8
+Hash: 51611625694173121,	key: Victoria,	data: Mitsubishi Galant
 Collision of elements with hash 2354644918762
-Hash: 2354644918762,	key: Aurora,	data: MagicianHash: 2354614913386,	key: Audrey,	data: Fashion designer107
-Hash: 18778900331,	key: Chloe,	data: Administrative assistant
-112
+Hash: 2354644918762,	key: Aurora,	data: Renault Logan
+Hash: 2599159217102,	key: Hannah,	data: Audi A8L
+Hash: 2852256131044,	key: Olivia,	data: Ford Scorpio
+Hash: 165109265,	key: Luke,	data: AMC Gremlin
+Collision of elements with hash 20157108358
+Hash: 20157108358,	key: Henry,	data: Lancia Delta S4
+Hash: 141345162,	key: Alex,	data: Dodge RAM
+Hash: 2599167837666,	key: Harper,	data: Mazda 636
+Collision of elements with hash 20702183903
+Hash: 20702183903,	key: Jacob,	data: Lincoln Continental
+Hash: 21256395379,	key: Layla,	data: Alfa Romeo 156
+Collision of elements with hash 39764181390638288
+Hash: 39764181390638288,	key: Brooklyn,	data: Nissan  Maxima A32
+Hash: 2995993900132,	key: Sophia,	data: Mazda RX-7
+Hash: 43929557046135709,	key: Isabella,	data: Mercedes-Benz CLS350
+Hash: 5091980017461607051,	key: Christopher,	data: Pontiac Firebird
+Hash: 2995993900136,	key: Sophie,	data: Chevrolet Camaro
+Collision of elements with hash 2352401577673
+Hash: 2352401577673,	key: Amelia,	data: Subaru Forester
+Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer
+Collision of elements with hash 5200256600009926694
+Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34
+Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100
+Hash: 164909698,	key: Lila,	data: Mercury Marauder
+Collision of elements with hash 358615632700851
+Hash: 358615632700851,	key: Michael,	data: Honda Civic 8
+Hash: 2497786092275,	key: Evelyn,	data: Ford Crown Victoria
+Hash: 46855883951069617,	key: Nicholas,	data: SAAB 9-3
+Hash: 1293990,	key: Max,	data: Land Rover Defender 110
+Hash: 21298961656,	key: Lucas,	data: BMW M5 F90
+Collision of elements with hash 2352676453217
+Hash: 2352676453217,	key: Andrew,	data: Subaru Impreza
+Hash: 24319504273,	key: Willy,	data: Chevrolet Corvair
+Collision of elements with hash 178054682
+Hash: 178054682,	key: Ryan,	data: Chevrolet Corvette C6
+Hash: 321857151590598,	key: Eleanor,	data: Jeep Cherokee XJ
+Collision of elements with hash 19343429224
+Hash: 19343429224,	key: Emila,	data: Volkswagen Passat B7
+Hash: 149949568,	key: Emma,	data: BMW e63
+Hash: 19907874146,	key: Grace,	data: Cadillac Fleetwood
+Hash: 179868551,	key: Sean,	data: Toyota Corolla AE86
+Hash: 19040962024,	key: David,	data: Peugeot 308
+Collision of elements with hash 23211829766
+Hash: 23211829766,	key: Simon,	data: Jaguar XJ
+Hash: 2886871324774,	key: Philip,	data: Ford Orion Mark2
+Hash: 2354614913386,	key: Audrey,	data: Ford Mustang SN95
+Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro
+Hash: 18495536992,	key: Bella,	data: Nissan Silvia S14
+Hash: 303499671929569,	key: Anthony,	data: Rover 75
+Collision of elements with hash 166924043
+Hash: 166924043,	key: Mark,	data: GMC Suburban
+Hash: 150032259,	key: Eric,	data: Citroen XM
+Collision of elements with hash 2674492826345
+Hash: 2674492826345,	key: Joseph,	data: Mercedes-Benz Sprinter
+Hash: 141445501,	key: Aria,	data: BMW e65
+Hash: 164909722,	key: Lily,	data: Opel Diplomat
+Collision of elements with hash 18225069919
+Hash: 18225069919,	key: Ahmed,	data: BWM E24 635 csi
+Hash: 1294999,	key: Mia,	data: Dodge Charger
 Collision of elements with hash 19358438000
-Hash: 19358438000,	key: Ethan,	data: AccountantHash: 20702349040,	key: James,	data: Nurse115
-Collision of elements with hash 21256395379
-Hash: 21256395379,	key: Layla,	data: ResearcherHash: 2497786092275,	key: Evelyn,	data: Police officer120
-Hash: 21298961656,	key: Lucas,	data: Carpenter
-125
-Collision of elements with hash 20988008957
-Hash: 20988008957,	key: Kevin,	data: Real estate agentHash: 141445501,	key: Aria,	data: Judge126
-Hash: 149932798,	key: Ella,	data: Tour guide
+Hash: 19358438000,	key: Ethan,	data: Mercedes-Benz CLA
+Hash: 1096984,	key: Ava,	data: Audi A6
+Hash: 20988008957,	key: Kevin,	data: Crysler 300M
+Hash: 2813510307290,	key: Nathan,	data: Nissan Z350
+Hash: 404700870353359,	key: William,	data: Buick Riviera 1965
+Collision of elements with hash 20702349040
+Hash: 20702349040,	key: James,	data: Mini Clubman
+Hash: 39704236703904548,	key: Benjamin,	data: BMW X7
+Hash: 358334581853402,	key: Matthew,	data: Toyota Corolla

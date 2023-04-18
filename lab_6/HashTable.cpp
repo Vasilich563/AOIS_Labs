@@ -19,8 +19,7 @@ std::ostream& operator<<(std::ostream& out, const HashTable& hash_table)
                     first_element_flag = false;
                     out << element.getHash() << "\n";
                 }
-                out << element;  // For logout
-                //out << "\tKey: " << element.getKey() << "\t data: " << element.getData() << "\n";
+                out << element << "\n";
             }
         }
         else
