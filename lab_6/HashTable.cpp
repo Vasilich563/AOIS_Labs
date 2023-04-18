@@ -308,3 +308,23 @@ void HashTable::addElement(std::string key, std::string value)
         )
     );
 }
+
+void HashTable::removeElement(const char* key)
+{
+    // TODO
+}
+
+void HashTable::removeElement(string key)
+{
+    removeElement(key.c_str());
+}
+
+void HashTable::findElement(const char* key)
+{
+    // TODO
+}
+
+void HashTable::findElement(string key)
+{
+    findElement(key.c_str());
+}

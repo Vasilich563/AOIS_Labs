@@ -106,6 +106,12 @@ public:
     void addElement(std::string key, const char* value);
     void addElement(std::string key, std::string value);
 
+    void removeElement(const char* key);
+    void removeElement(std::string key);
+
+    void findElement(const char* key);
+    void findElement(std::string key);
+
     std::ofstream logout;
 };
 
