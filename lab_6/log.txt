@@ -705,11 +705,13 @@ Hash: 179868551,	key: Sean,	data: GardenerHash: 18254992135,	key: Avery,	data: I
 Hash: 141345162,	key: Alex,	data: Lawyer
 11
 Collision of elements with hash 166924043
-Hash: 166924043,	key: Mark,	data: ArtistHash: 5091980017461607051,	key: Christopher,	data: Flight attendant15
+Hash: 166924043,	key: Mark,	data: ArtistHash: 5091980017461607051,	key: Christopher,	data: Flight attendant
+15
 Hash: 160715663,	key: John,	data: Teacher
 17
 Collision of elements with hash 165109265
-Hash: 165109265,	key: Luke,	data: Human resources specialistHash: 24319504273,	key: Willy,	data: Waitress23
+Hash: 165109265,	key: Luke,	data: Human resources specialistHash: 24319504273,	key: Willy,	data: Waitress
+23
 Hash: 1294999,	key: Mia,	data: Pharmacist
 24
 Hash: 1096984,	key: Ava,	data: Athlete

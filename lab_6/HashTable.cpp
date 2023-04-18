@@ -19,7 +19,7 @@ std::ostream& operator<<(std::ostream& out, const HashTable& hash_table)
                     first_element_flag = false;
                     out << element.getHash() << "\n";
                 }
-                out << element;
+                out << element;  // For logout
                 //out << "\tKey: " << element.getKey() << "\t data: " << element.getData() << "\n";
             }
         }
@@ -144,9 +144,9 @@ void HashTable::emplaceElementIntoTable(HashTableElement new_element)
         rehashTable();
     }
     int id = new_element.getHash() % size();
-    logout << new_element << "\tId: " << id << "\tSize: "<< size() << endl;
+    logout << new_element << "\tId: " << id << endl << "\tSize: "<< size() << endl;
     table[id].push_front(new_element);
-    logout << "\n#\nId: " << id << "\t Elements:" << endl;
+    logout << "\n#\nId: " << id << endl << "\t Elements:" << endl;
     for(auto el : table[id])
     {
         logout << el << "\t";
