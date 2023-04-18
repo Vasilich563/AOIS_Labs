@@ -309,38 +309,52 @@ void HashTable::addElement(std::string key, std::string value)
     );
 }
 
-void HashTable::removeElement(const char* key)
+void HashTable::removeElement(const char* key_to_find)
 {
-    // TODO
+    removeElement(string(key_to_find));
 }
 
-void HashTable::removeElement(string key)
+void HashTable::removeElement(string key_to_find)
 {
-    removeElement(key.c_str());
-}
-
-HashTable::HashTableElement& HashTable::findElement(const char* key)
-{
-    // TODO
-    unsigned long index_to_find = hashFunction(key) % size();
+    unsigned long index_to_find = hashFunction(key_to_find) % size();
     if(!table[index_to_find].empty())
     {
-        if(collisionsAtIndex(index_to_find))
+        if(!collisionsAtIndex(index_to_find))
         {
-            for (auto element : table[index_to_find])
+            table[index_to_find].pop_front();
+        }
+        for (auto element : table[index_to_find])
+        {
+            if(element.getKey().compare(key_to_find) == 0)
             {
-                // TODO Сравнить элементы
+                table[index_to_find].remove(element);
             }
         }
-        else
+    }
+    throw out_of_range(string("No element with such key:\t") + key_to_find);
+}
+
+HashTable::HashTableElement& HashTable::findElement(const char* key_to_find)
+{
+    return findElement(string(key_to_find));
+}
+
+HashTable::HashTableElement& HashTable::findElement(string key_to_find)
+{
+    unsigned long index_to_find = hashFunction(key_to_find) % size();
+    if(!table[index_to_find].empty())
+    {
+        if(!collisionsAtIndex(index_to_find))
         {
             return *(table[index_to_find].begin());
         }
+        for (auto element : table[index_to_find])
+        {
+            if(element.getKey().compare(key_to_find) == 0)
+            {
+                return element;
+            }
+        }
     }
-    // TODO throw exception
-}
-
-HashTable::HashTableElement& HashTable::findElement(string key)
-{
-    findElement(key.c_str());
+    throw out_of_range(string("No element with such key:\t") + key_to_find);
 }

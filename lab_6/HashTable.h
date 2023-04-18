@@ -86,11 +86,11 @@ public:
     void addElement(std::string key, const char* value);
     void addElement(std::string key, std::string value);
 
-    void removeElement(const char* key);
-    void removeElement(std::string key);
+    void removeElement(const char* key_to_find);
+    void removeElement(std::string key_to_find);
 
-    HashTableElement& findElement(const char* key);
-    HashTableElement& findElement(std::string key);
+    HashTableElement& findElement(const char* key_to_find);
+    HashTableElement& findElement(std::string key_to_find);
 
     std::ofstream logout;
 
