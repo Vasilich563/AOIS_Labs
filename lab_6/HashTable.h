@@ -23,70 +23,50 @@ std::ostream& operator<<(std::ostream& out, const HashTable& hash_table);
 
 class HashTable
 {
-private:
-
-    class HashTableElement
-    {
-    private:
-
-        unsigned long hash;
-
-        std::string data;
-
-        std::string key;
-
-        friend std::ostream& operator<<(std::ostream& out, const HashTable::HashTableElement& hash_element)
-        {
-            out << "Hash: " << hash_element.hash << ",\tkey: " << hash_element.key << ",\tdata: " << hash_element.data;
-            return out;
-        }
-
-    public:
-
-        HashTableElement();
-
-        HashTableElement(unsigned long hash, std::string key, std::string data);
-
-        HashTableElement(const HashTableElement& other);
-
-        HashTableElement& operator= (const HashTableElement& other);
-
-        bool operator== (const HashTableElement& other);
-
-        bool operator != (const HashTableElement& other);
-
-        std::string& getData();
-
-        void setData(std::string data);
-
-        void setData(const char* data);
-
-        std::string& getKey();
-
-        unsigned long getHash();
-
-        bool empty();
-
-    };
-
-    friend std::ostream& operator<<(std::ostream& out, const HashTable& hash_table);
-
-    std::ostream& addElementsChainToOutput(std::ostream& out);
-
-    unsigned long hashFunction(std::string key);
-    unsigned long hashFunction(const char* key);
-
-    std::vector<std::forward_list<HashTableElement>> table;
-    size_t elements_amount;
-
-    size_t countUsedIndexes();
-
-    void emplaceElementIntoTable(HashTableElement new_element);
-
-    void rehashTable();
-
-
 public:
+    class HashTableElement
+        {
+        private:
+
+            unsigned long hash;
+
+            std::string data;
+
+            std::string key;
+
+            friend std::ostream& operator<<(std::ostream& out, const HashTable::HashTableElement& hash_element)
+            {
+                out << "Hash: " << hash_element.hash << ",\tkey: " << hash_element.key << ",\tdata: " << hash_element.data;
+                return out;
+            }
+
+        public:
+
+            HashTableElement();
+
+            HashTableElement(unsigned long hash, std::string key, std::string data);
+
+            HashTableElement(const HashTableElement& other);
+
+            HashTableElement& operator= (const HashTableElement& other);
+
+            bool operator== (const HashTableElement& other);
+
+            bool operator != (const HashTableElement& other);
+
+            std::string& getData();
+
+            void setData(std::string data);
+
+            void setData(const char* data);
+
+            std::string& getKey();
+
+            unsigned long getHash();
+
+            bool empty();
+
+        };
 
     HashTable();
     HashTable(const HashTable& other);
@@ -109,10 +89,27 @@ public:
     void removeElement(const char* key);
     void removeElement(std::string key);
 
-    void findElement(const char* key);
-    void findElement(std::string key);
+    HashTableElement& findElement(const char* key);
+    HashTableElement& findElement(std::string key);
 
     std::ofstream logout;
+
+private:
+
+    friend std::ostream& operator<<(std::ostream& out, const HashTable& hash_table);
+
+    unsigned long hashFunction(std::string key);
+    unsigned long hashFunction(const char* key);
+
+    std::vector<std::forward_list<HashTableElement>> table;
+    size_t elements_amount;
+
+    size_t countUsedIndexes();
+
+    void emplaceElementIntoTable(HashTableElement new_element);
+
+    void rehashTable();
+
 };
 
 

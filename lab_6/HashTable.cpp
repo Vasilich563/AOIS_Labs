@@ -319,12 +319,28 @@ void HashTable::removeElement(string key)
     removeElement(key.c_str());
 }
 
-void HashTable::findElement(const char* key)
+HashTable::HashTableElement& HashTable::findElement(const char* key)
 {
     // TODO
+    unsigned long index_to_find = hashFunction(key) % size();
+    if(!table[index_to_find].empty())
+    {
+        if(collisionsAtIndex(index_to_find))
+        {
+            for (auto element : table[index_to_find])
+            {
+                // TODO Сравнить элементы
+            }
+        }
+        else
+        {
+            return *(table[index_to_find].begin());
+        }
+    }
+    // TODO throw exception
 }
 
-void HashTable::findElement(string key)
+HashTable::HashTableElement& HashTable::findElement(string key)
 {
     findElement(key.c_str());
 }
