@@ -263,7 +263,7 @@ bool HashTable::collisionsAtIndex(int index) const
     return counter > 1;
 }
 
-void HashTable::addElement(const char* key, const char* value)
+void HashTable::add(const char* key, const char* value)
 {
     emplaceElementIntoTable(
         HashTableElement(
@@ -274,7 +274,7 @@ void HashTable::addElement(const char* key, const char* value)
     );
 }
 
-void HashTable::addElement(const char* key, std::string value)
+void HashTable::add(const char* key, std::string value)
 {
     emplaceElementIntoTable(
         HashTableElement(
@@ -285,7 +285,7 @@ void HashTable::addElement(const char* key, std::string value)
     );
 }
 
-void HashTable::addElement(std::string key, const char* value)
+void HashTable::add(std::string key, const char* value)
 {
     emplaceElementIntoTable(
         HashTableElement(
@@ -296,7 +296,7 @@ void HashTable::addElement(std::string key, const char* value)
     );
 }
 
-void HashTable::addElement(std::string key, std::string value)
+void HashTable::add(std::string key, std::string value)
 {
     logout << "addElement()" <<endl;
     emplaceElementIntoTable(
@@ -308,37 +308,40 @@ void HashTable::addElement(std::string key, std::string value)
     );
 }
 
-void HashTable::removeElement(const char* key_to_find)
+void HashTable::remove(const char* key_to_find)
 {
-    removeElement(string(key_to_find));
+    remove(string(key_to_find));
 }
 
-void HashTable::removeElement(string key_to_find)
+void HashTable::remove(string key_to_find)
 {
-    unsigned long index_to_find = hashFunction(key_to_find) % size();
-    if(!table[index_to_find].empty())
+    unsigned long index_to_remove = hashFunction(key_to_find) % size();
+    if(!table[index_to_remove].empty())
     {
-        if(!collisionsAtIndex(index_to_find))
+        if(!collisionsAtIndex(index_to_remove))
         {
-            table[index_to_find].pop_front();
+            table[index_to_remove].pop_front();
+            return;
         }
-        for (auto element : table[index_to_find])
+        for(auto element_iterator = table[index_to_remove].begin(); element_iterator != table[index_to_remove].end(); element_iterator++)
         {
-            if(element.getKey().compare(key_to_find) == 0)
+            if(element_iterator->getKey().compare(key_to_find) == 0)
             {
-                table[index_to_find].remove(element);
+                table[index_to_remove].remove(*element_iterator);
+                return;
             }
+
         }
     }
     throw out_of_range(string("No element with such key:\t") + key_to_find);
 }
 
-HashTable::HashTableElement& HashTable::findElement(const char* key_to_find)
+HashTable::HashTableElement& HashTable::find(const char* key_to_find)
 {
-    return findElement(string(key_to_find));
+    return find(string(key_to_find));
 }
 
-HashTable::HashTableElement& HashTable::findElement(string key_to_find)
+HashTable::HashTableElement& HashTable::find(string key_to_find)
 {
     unsigned long index_to_find = hashFunction(key_to_find) % size();
     if(!table[index_to_find].empty())
@@ -347,12 +350,13 @@ HashTable::HashTableElement& HashTable::findElement(string key_to_find)
         {
             return *(table[index_to_find].begin());
         }
-        for (auto element : table[index_to_find])
+        for(auto element_iterator = table[index_to_find].begin(); element_iterator != table[index_to_find].end(); element_iterator++)
         {
-            if(element.getKey().compare(key_to_find) == 0)
+            if(element_iterator->getKey().compare(key_to_find) == 0)
             {
-                return element;
+                return *(element_iterator);
             }
+
         }
     }
     throw out_of_range(string("No element with such key:\t") + key_to_find);

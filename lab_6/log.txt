@@ -1408,6 +1408,20 @@ Hash: 20157108358,	key: Henry,	data: Lancia Delta S4	Id: 10
 Id: 10
 	 Elements:
 Hash: 20157108358,	key: Henry,	data: Lancia Delta S4	Hash: 141345162,	key: Alex,	data: Dodge RAM	Hash: 2599167837666,	key: Harper,	data: Mazda 636	#
+key: Emily	key.c_str: Emily
+Key: 	Hash: 19343429248
+key: Gabriel	key.c_str: Gabriel
+Key: 	Hash: 330679950988470
+key: Gabriel	key.c_str: Gabriel
+Key: 	Hash: 330679950988470
+key: Gabriel	key.c_str: Gabriel
+Key: 	Hash: 330679950988470
+key: Chloe	key.c_str: Chloe
+Key: 	Hash: 18778900331
+key: Chloe	key.c_str: Chloe
+Key: 	Hash: 18778900331
+key: Chloe	key.c_str: Chloe
+Key: 	Hash: 18778900331
 Hash: 19343429248,	key: Emily,	data: Porsche Panamera
 Hash: 166924057,	key: Mary,	data: Fiat Punto
 Collision of elements with hash 149932798
@@ -1443,7 +1457,6 @@ Hash: 2352401577673,	key: Amelia,	data: Subaru Forester
 Hash: 303067946777769,	key: Abigail,	data: Mitsubishi Lancer
 Collision of elements with hash 5200256600009926694
 Hash: 5200256600009926694,	key: Charlotte,	data: Nissan Skyline R34
-Hash: 330679950988470,	key: Gabriel,	data: Toyota MarkII X100
 Hash: 164909698,	key: Lila,	data: Mercury Marauder
 Collision of elements with hash 358615632700851
 Hash: 358615632700851,	key: Michael,	data: Honda Civic 8
@@ -1467,7 +1480,7 @@ Collision of elements with hash 23211829766
 Hash: 23211829766,	key: Simon,	data: Jaguar XJ
 Hash: 2886871324774,	key: Philip,	data: Ford Orion Mark2
 Hash: 2354614913386,	key: Audrey,	data: Ford Mustang SN95
-Hash: 18778900331,	key: Chloe,	data: Audi Sport quattro
+Hash: 18778900331,	key: Chloe,	data: Ford GT40
 Hash: 18495536992,	key: Bella,	data: Nissan Silvia S14
 Hash: 303499671929569,	key: Anthony,	data: Rover 75
 Collision of elements with hash 166924043

@@ -38,9 +38,32 @@ int main()
     };
     for (int i = 0; i < 63; i++)
     {
-        table.addElement(keys[i],values[i]);
+        table.add(keys[i],values[i]);
     }
-    std::cout<<table;
+    std::cout << table << std::endl;
+    std::cout << "\n##################################################\n\n";
+    std::cout << table.find("Emily") << std::endl;
+    std::cout << "\n##################################################\n\n";
+    std::cout << table.find("Gabriel") << std::endl;
+    std::cout << "\n##################################################\n\n";
+    table.remove("Gabriel");
+    std::cout << table << std::endl;
+    try
+    {
+        table.find("Gabriel");
+    }
+    catch(std::out_of_range& ex)
+    {
+        std::cout << ex.what() << std::endl;
+        std::cout << "\n##################################################\n\n";
+    }
+    std::cout << table.find("Chloe") <<std::endl;
+    std::cout << "\n##################################################\n\n";
+    table.find("Chloe").setData("Ford GT40");
+    std::cout << table.find("Chloe") <<std::endl;
+    std::cout << "\n##################################################\n\n";
+    std::cout<<table << std::endl;
+    std::cout << "\n##################################################\n\n";
     table.logout << table;
     table.logout.close();
     return 0;

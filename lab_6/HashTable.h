@@ -78,23 +78,23 @@ public:
     size_t size();
     size_t size() const; 
 
-    bool collisionsAtIndex(int index);
-    bool collisionsAtIndex(int index) const;
+    void add(const char* key, const char* value);
+    void add(const char* key, std::string value);
+    void add(std::string key, const char* value);
+    void add(std::string key, std::string value);
 
-    void addElement(const char* key, const char* value);
-    void addElement(const char* key, std::string value);
-    void addElement(std::string key, const char* value);
-    void addElement(std::string key, std::string value);
+    void remove(const char* key_to_find);
+    void remove(std::string key_to_find);
 
-    void removeElement(const char* key_to_find);
-    void removeElement(std::string key_to_find);
-
-    HashTableElement& findElement(const char* key_to_find);
-    HashTableElement& findElement(std::string key_to_find);
+    HashTableElement& find(const char* key_to_find);
+    HashTableElement& find(std::string key_to_find);
 
     std::ofstream logout;
 
 private:
+
+    bool collisionsAtIndex(int index);
+    bool collisionsAtIndex(int index) const;
 
     friend std::ostream& operator<<(std::ostream& out, const HashTable& hash_table);
 
