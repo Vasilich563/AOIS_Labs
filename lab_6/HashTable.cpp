@@ -1,3 +1,4 @@
+//Author: Vodohleb04
 #include "HashTable.h"
 
 using namespace std;

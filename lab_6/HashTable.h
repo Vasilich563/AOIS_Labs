@@ -1,3 +1,4 @@
+//Author: Vodohleb04
 #pragma once
 
 #ifndef _HASH_TABLE_
