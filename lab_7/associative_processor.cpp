@@ -38,3 +38,27 @@ ostream& operator<<(ostream& out, vector<vector<int>> int_matrix)
 
     return out;
 }
+
+std::vector<int> findNearFromBelow(std::vector<std::vector<int>> int_matrix, std::vector<int> word)
+{
+    // TODO
+}
+
+std::vector<int> findLowerIndexes(std::vector<std::vector<int>> int_matrix, std::vector<int> word)
+{
+    vector<int> lower_indexes;
+    for(int worx_index = 0; worx_index < lower_indexes.size(); worx_index++)
+    {
+
+    }
+}
+
+std::vector<int> findNearFromAbove(std::vector<std::vector<int>> int_matrix, std::vector<int> word)
+{
+    // TODO
+}
+
+std::vector<int> findGreaterIndexes(std::vector<std::vector<int>> int_matrix, std::vector<int> word)
+{
+    // TODO
+}
