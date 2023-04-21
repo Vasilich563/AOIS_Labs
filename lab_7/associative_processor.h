@@ -4,23 +4,25 @@
 #ifndef _ASSOCIATIVE_PROCESSOR_
 #define _ASSOCIATIVE_PROCESSOR_
 
+#include <memory_word.h>
 #include <vector>
 #include <fstream>
+#include <iostream>
 #include <stdexcept>
 
 
 //Returns matrix, filled with random numbers(min: 0, max: 1)
-std::vector<std::vector<int>> makeRandomMatrix(int strings_amount, int strings_length);
+std::vector<MemoryWord> makeRandomMatrix(int strings_amount);
 
-std::ostream& operator<<(std::ostream& out, std::vector<std::vector<int>> int_vector);
+std::ostream& operator<<(std::ostream& out, std::vector<MemoryWord> word_matrix);
 
-std::vector<int> findNearFromBelow(std::vector<std::vector<int>> int_matrix, std::vector<int> word);
+MemoryWord findNearFromBelow(std::vector<MemoryWord> word_matrix, MemoryWord word);
 
-std::vector<int> findLowerIndexes(std::vector<std::vector<int>> int_matrix, std::vector<int> word);
+std::vector<int> findLowerIndexes(std::vector<MemoryWord> word_matrix, MemoryWord word);
 
-std::vector<int> findNearFromAbove(std::vector<std::vector<int>> int_matrix, std::vector<int> word);
+MemoryWord findNearFromAbove(std::vector<MemoryWord> word_matrix, MemoryWord word);
 
-std::vector<int> findGreaterIndexes(std::vector<std::vector<int>> int_matrix, std::vector<int> word);
+std::vector<int> findGreaterIndexes(std::vector<MemoryWord> word_matrix, MemoryWord word);
 
 
 #endif //!_ASSOCIATIVE_PROCESSOR_

@@ -4,7 +4,7 @@
 
 int main()
 {
-    auto m = makeRandomMatrix(10, 16);
+    auto m = makeRandomMatrix(10);
     std::cout << m;
 
     return 0;

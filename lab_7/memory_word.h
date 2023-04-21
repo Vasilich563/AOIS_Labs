@@ -3,14 +3,16 @@
 
 #ifndef _MEMORY_WORD_
 #define _MEMORY_WORD_
+#define WORD_LENGTH 16
 
 #include <vector>
 #include <fstream>
+#include <iostream>
 
 
 class MemoryWord;
 
-inline std::ostream& operator<<(std::ostream& out, const MemoryWord&);
+std::ostream& operator<<(std::ostream& out, const MemoryWord& memory_word);
 
 class MemoryWord
 {
@@ -18,7 +20,7 @@ private:
 
     std::vector<int> word_data;
 
-    friend inline std::ostream& operator<<(std::ostream& out, const MemoryWord&);
+    friend std::ostream& operator<<(std::ostream& out, const MemoryWord& memory_word);
 
 public:
 
@@ -38,9 +40,8 @@ public:
 
     std::vector<int>& getWordData();
 
-    std::vector<int>& getWordData() const;
-
 };
+
 
 
 #endif //!_MEMORY_WORD_
