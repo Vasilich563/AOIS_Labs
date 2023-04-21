@@ -21,23 +21,23 @@ std::ostream& operator<<(std::ostream& out, const std::vector<int> int_vector)
 
 void task_1()
 {
-    std::vector<MemoryWord> matrix = makeRandomMatrix(10);
+    std::vector<MemoryWord> memory_words = makeRandomMatrix(10);
     std::fstream logout;
     logout.open("log_task1.txt", std::fstream::out);
-    logout << "Matrix:\n" << matrix << std::endl;
-    MemoryWord testword;
-    logout << "\ntest_word:\t"<< testword << std::endl << std::endl;
+    logout << "Matrix:\n" << memory_words << std::endl;
+    MemoryWord task1_word;
+    logout << "\ntest_word:\t"<< task1_word << std::endl << std::endl;
     try{
-        logout << "greater indexes:\t" << findGreaterIndexes(matrix, testword) << std::endl;
-        MemoryWord near_from_above = findNearFromAbove(matrix, testword);
+        logout << "greater indexes:\t" << findGreaterIndexes(memory_words, task1_word) << std::endl;
+        MemoryWord near_from_above = findNearFromAbove(memory_words, task1_word);
         logout << "near_from_above:\t" << near_from_above << std::endl << std::endl;
     }
     catch(std::domain_error &ex){
         logout << "Exception: " << ex.what() << std::endl;
     }
     try{
-        logout << "lower indexes:\t" << findLowerIndexes(matrix, testword) << std::endl;
-        MemoryWord near_from_below = findNearFromBelow(matrix, testword);
+        logout << "lower indexes:\t" << findLowerIndexes(memory_words, task1_word) << std::endl;
+        MemoryWord near_from_below = findNearFromBelow(memory_words, task1_word);
         logout << "near_from_below:\t" << near_from_below << std::endl << std::endl;
     }
     catch(std::domain_error &ex){
@@ -46,9 +46,25 @@ void task_1()
     logout.close();
 }
 
+void task_2()
+{
+    std::vector<MemoryWord> memory_words = makeRandomMatrix(10);
+    std::fstream logout;
+    logout.open("log_task2.txt", std::fstream::out);
+    logout << "Matrix:\n" << memory_words << std::endl;
+
+    MemoryWord task2_word;
+    logout << "\ntest_word:\t"<< task2_word << std::endl << std::endl;
+
+    logout << "Accordance result:\t" << findAccordence(memory_words, task2_word) << std::endl;
+
+    logout.close();
+}
+
 
 int main()
 {
     task_1();
+    task_2();
     return 0;
 }

@@ -13,9 +13,4 @@ Matrix:
 
 test_word:	0 1 0 1 1 1 0 1 1 0 0 0 1 0 0 1 
 
-greater indexes:	{1, 2, 4, 6, 9}
-near_from_above:	0 1 0 1 1 1 1 0 1 1 0 0 1 0 1 1 
-
-lower indexes:	{0, 3, 5, 7, 8}
-near_from_below:	0 1 0 1 0 0 1 0 1 1 0 0 1 0 0 1 
-
+Accordance result:	0 1 1 1 1 1 1 1 1 0 0 0 1 0 1 1 

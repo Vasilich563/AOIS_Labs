@@ -92,3 +92,16 @@ bool MemoryWord::operator>(const MemoryWord& other)
     }
     return false;
 }
+
+int MemoryWord::accordanceNumber(const MemoryWord& other)
+{
+    int accordance_number = 0;
+    for(int i = 0; i < word_data.size(); i++)
+    {
+        if(word_data[i] == other.word_data.at(i))
+        {
+            accordance_number += 1;
+        }
+    }
+    return accordance_number;
+}

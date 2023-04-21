@@ -38,6 +38,8 @@ public:
 
     bool operator!=(const MemoryWord& other);
 
+    int accordanceNumber(const MemoryWord& other);
+
     std::vector<int>& getWordData();
 
 };
