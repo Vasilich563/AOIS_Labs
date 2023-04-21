@@ -24,5 +24,4 @@ MemoryWord findNearFromAbove(std::vector<MemoryWord> word_matrix, MemoryWord wor
 
 std::vector<int> findGreaterIndexes(std::vector<MemoryWord> word_matrix, MemoryWord word);
 
-
 #endif //!_ASSOCIATIVE_PROCESSOR_

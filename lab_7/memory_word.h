@@ -3,7 +3,8 @@
 
 #ifndef _MEMORY_WORD_
 #define _MEMORY_WORD_
-#define WORD_LENGTH 16
+//#define WORD_LENGTH 16
+#define WORD_LENGTH 8
 
 #include <vector>
 #include <fstream>
