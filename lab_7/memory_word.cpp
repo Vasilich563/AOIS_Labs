@@ -37,60 +37,62 @@ vector<int>& MemoryWord::getWordData()
     return word_data;
 }
 
+unsigned int MemoryWord::current_g(unsigned int previous_g, unsigned int previous_l, unsigned int this_word_i_digit, unsigned int other_word_i_digit)
+{
+    return (previous_g | ((!this_word_i_digit) & other_word_i_digit & (!previous_l)));
+}
+
+unsigned int MemoryWord::current_l(unsigned int previous_l, unsigned int previous_g, unsigned int this_word_i_digit, unsigned int other_word_i_digit)
+{
+    return (previous_l | (this_word_i_digit & (!other_word_i_digit) & (!previous_g)));
+}
+
 bool MemoryWord::operator==(const MemoryWord& other)
 {
+    unsigned int g = 0;
+    unsigned int l = 0;
     for(int i = 0; i < word_data.size(); i++)
     {
-        if(word_data[i] != other.word_data.at(i))
-        {
-            return false;
-        }
+        g = MemoryWord::current_g(g, l, this->word_data[i], other.word_data[i]);
+        l = MemoryWord::current_l(l, g, this->word_data[i], other.word_data[i]);
     }
-    return true;
+    return (g == 0 && l == 0);
 }
 
 bool MemoryWord::operator!=(const MemoryWord& other)
 {
+    unsigned int g = 0;
+    unsigned int l = 0;
     for(int i = 0; i < word_data.size(); i++)
     {
-        if(word_data[i] == other.word_data.at(i))
-        {
-            return false;
-        }
+        g = MemoryWord::current_g(g, l, (unsigned int)(this->word_data[i]), (unsigned int)(other.word_data[i]));
+        l = MemoryWord::current_l(l, g, (unsigned int)(this->word_data[i]), (unsigned int)(other.word_data[i]));
     }
-    return true;
+    return (g != 0 && l != 0);
 }
 
 bool MemoryWord::operator<(const MemoryWord& other)
 {
-    for(int i =0; i < word_data.size(); i++)
+    unsigned int g = 0;
+    unsigned int l = 0;
+    for(int i = 0; i < word_data.size(); i++)
     {
-        if(word_data[i] < other.word_data.at(i))
-        {
-            return true;
-        }
-        else if(word_data[i] > other.word_data.at(i))
-        {
-            return false;
-        }
+        g = MemoryWord::current_g(g, l, (unsigned int)(this->word_data[i]), (unsigned int)(other.word_data[i]));
+        l = MemoryWord::current_l(l, g, (unsigned int)(this->word_data[i]), (unsigned int)(other.word_data[i]));
     }
-    return false;
+    return (g == 1 && l == 0);
 }
 
 bool MemoryWord::operator>(const MemoryWord& other)
 {
-    for(int i =0; i < word_data.size(); i++)
+    unsigned int g = 0;
+    unsigned int l = 0;
+    for(int i = 0; i < word_data.size(); i++)
     {
-        if(word_data[i] > other.word_data.at(i))
-        {
-            return true;
-        }
-        else if(word_data[i] < other.word_data.at(i))
-        {
-            return false;
-        }
+        g = MemoryWord::current_g(g, l, (unsigned int)(this->word_data[i]), (unsigned int)(other.word_data[i]));
+        l = MemoryWord::current_l(l, g, (unsigned int)(this->word_data[i]), (unsigned int)(other.word_data[i]));
     }
-    return false;
+    return (g == 0 && l == 1);
 }
 
 int MemoryWord::accordanceNumber(const MemoryWord& other)

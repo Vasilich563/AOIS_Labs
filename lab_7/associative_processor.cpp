@@ -108,11 +108,19 @@ MemoryWord findAccordence(std::vector<MemoryWord> memory_words, MemoryWord word_
         throw length_error("Can't do this operation for empty word matrix");
     }
     int max_accordance_index = 0;
+    int max_accordance_number = word_to_search.accordanceNumber(memory_words[max_accordance_index]);
     for(int i = 0; i < memory_words.size(); i++)
     {
-        if(word_to_search.accordanceNumber(memory_words[i]) > word_to_search.accordanceNumber(memory_words[max_accordance_index]))
+        int current_accordance_number = word_to_search.accordanceNumber(memory_words[i]);
+        if(current_accordance_number > max_accordance_number)
         {
             max_accordance_index = i;
+            max_accordance_number = word_to_search.accordanceNumber(memory_words[max_accordance_index]);
+        }
+        else if(max_accordance_number == current_accordance_number && memory_words[i] > memory_words[max_accordance_index])
+        {
+            max_accordance_index = i;
+            max_accordance_number = word_to_search.accordanceNumber(memory_words[max_accordance_index]);
         }
     }
     return memory_words[max_accordance_index];

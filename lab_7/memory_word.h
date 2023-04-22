@@ -22,6 +22,10 @@ private:
 
     friend std::ostream& operator<<(std::ostream& out, const MemoryWord& memory_word);
 
+    static unsigned int current_g(unsigned int previous_g, unsigned int previous_l, unsigned int this_word_digit, unsigned int other_word_digit);
+
+    static unsigned int current_l(unsigned int previous_l, unsigned int previous_g, unsigned int this_word_digit, unsigned int other_word_digit);
+
 public:
 
     MemoryWord();
