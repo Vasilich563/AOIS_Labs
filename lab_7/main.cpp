@@ -21,7 +21,7 @@ std::ostream& operator<<(std::ostream& out, const std::vector<int> int_vector)
 
 void task_1()
 {
-    std::vector<MemoryWord> memory_words = makeRandomMatrix(10);
+    std::vector<MemoryWord> memory_words = makeRandomMatrix(16);
     std::fstream logout;
     logout.open("log_task1.txt", std::fstream::out);
     logout << "Matrix:\n" << memory_words << std::endl;
@@ -48,7 +48,7 @@ void task_1()
 
 void task_2()
 {
-    std::vector<MemoryWord> memory_words = makeRandomMatrix(10);
+    std::vector<MemoryWord> memory_words = makeRandomMatrix(16);
     std::fstream logout;
     logout.open("log_task2.txt", std::fstream::out);
     logout << "Matrix:\n" << memory_words << std::endl;
