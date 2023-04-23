@@ -1,3 +1,4 @@
 g++ -c -I. main.cpp
-g++ main.o -o main.exe
+g++ -c -I. diagonal_associative_memory.cpp
+g++ diagonal_associative_memory.o main.o -o main.exe
 ./main.exe
