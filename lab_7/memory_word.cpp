@@ -102,7 +102,7 @@ int MemoryWord::accordanceNumber(const MemoryWord& other)
     {
         if(word_data[i] == other.word_data.at(i))
         {
-            accordance_number += 1;
+            ++accordance_number;
         }
     }
     return accordance_number;

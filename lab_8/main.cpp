@@ -13,26 +13,36 @@ std::ostream& operator<<(std::ostream& out, const std::vector<unsigned int>& uin
    return out;
 }
 
+std::vector<unsigned int> columns = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5};
 
 int main()
 {
-   std::cout << "Yes\n";
-   DiagonalAM a;
-   std::cout << a << std::endl;
+   DiagonalAM test_DAM;
 
-   std::cout<<"############################################\n";
-   
-   for(int i = 0; i < a.size(); i++)
+   std::vector<unsigned int> word_to_search(16);
+
+   for(int i = 0; i < test_DAM.size(); i++)
    {
-      std::cout << a.getMatrixString(i) << std::endl;
+      word_to_search[i] = rand() % 2;
    }
 
+   std::cout << test_DAM << std::endl;
+
+   auto accordance_search_result = test_DAM.accordanceSearch(word_to_search);
+
    std::cout<<"############################################\n";
 
-   for(int i = 0; i < a.size(); i++)
+   std::cout << "wts: " << word_to_search << std::endl;
+
+   std::cout << "asr: " << accordance_search_result << std::endl;
+
+   std::cout<<"############################################\n";
+   for(int i = 0; i < test_DAM.size(); i++)
    {
-      std::cout << a.getWord(i) << std::endl;
+      std::cout << test_DAM.getWord(i) << std::endl;
    }
+
+   //std::cout << test_DAM <<std::endl;
 
    return 0;
 }

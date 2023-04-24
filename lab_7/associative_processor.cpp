@@ -112,6 +112,7 @@ MemoryWord findAccordence(std::vector<MemoryWord> memory_words, MemoryWord word_
     for(int i = 0; i < memory_words.size(); i++)
     {
         int current_accordance_number = word_to_search.accordanceNumber(memory_words[i]);
+        
         if(current_accordance_number > max_accordance_number)
         {
             max_accordance_index = i;
