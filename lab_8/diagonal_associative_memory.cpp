@@ -139,14 +139,11 @@ int DiagonalAM::accordanceNumber(vector<uint> word_to_compare, int memory_word_i
     return accordance_number;
 }
 
-
-#include<iostream>
 bool DiagonalAM::vPartsAreEquale(std::vector<uint> word_to_compare, int memory_word_index)
 {
     for(int i = 0; i < vPartSize(); i ++)
     {
         int memory_word_string_index = countDigitStringIndex(memory_word_index, i);
-        cout << i << "\t" << ((word_to_compare[i] == memory_words[memory_word_string_index][memory_word_index])?"True":"False") << std::endl;
         if(word_to_compare[i] != memory_words[memory_word_string_index][memory_word_index])
         {
             return false;
@@ -209,12 +206,9 @@ void DiagonalAM::addOperation(int memory_word_index)
         uint a_digit = getADigit(memory_word_index, ab_shift);
         uint b_digit = getBDigit(memory_word_index, ab_shift);
         current_s_string_index = countDigitStringIndex(memory_word_index, s_basic_start_pos + s_shift);
-        cout << "s_string: " << current_s_string_index << endl;
 
-        cout << "a: " << a_digit << "\tb: " << b_digit << "\tt: " << transfer_digit << "\ts: " << countSDigit(a_digit, b_digit, transfer_digit) << "\t";
         memory_words[current_s_string_index][memory_word_index] = countSDigit(a_digit, b_digit, transfer_digit);
         transfer_digit = countTransferDigit(a_digit, b_digit, transfer_digit);
-        cout << "new t: " << transfer_digit << endl;
         --s_shift;
     }
     current_s_string_index = countDigitStringIndex(memory_word_index, s_basic_start_pos + s_shift);
@@ -228,8 +222,10 @@ DiagonalAM::DiagonalAM(int size)
     {
         throw invalid_argument("size must be greater then 0");
     }
-    
-    // TODO check if size is degree of 2, that >= 2^3
+    if(size < 8 || (log2(size) - int(log2(size)) != 0.0))
+    {
+        throw invalid_argument("size must be a degree of 2 and greater than or equale 8");
+    }
     memory_words.resize(size);
     emplaceRandomWords(size);
 }
@@ -386,7 +382,6 @@ int DiagonalAM::makeAddition(std::vector<uint> word_to_search)
     {
         if(vPartsAreEquale(word_to_search, i))
         {
-            std::cout << i << "\n";
             addOperation(i);
             processed_words_amount++;
         }
