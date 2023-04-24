@@ -7,6 +7,7 @@
 #include <vector>
 #include <fstream>
 #include <stdexcept>
+#include <math.h>
 #define BASIC_MATRIX_SIZE 16
 
 class DiagonalAM;
@@ -17,23 +18,21 @@ class DiagonalAM
 {
 private:
 
-    int countDigitIndex(int word_index, int digit_position);
+    int countDigitStringIndex(int word_index, int digit_position);
 
     void emplaceRandomWords(int memory_size);
 
-    unsigned int constZeroDigit(unsigned int first_word_digit, unsigned int second_word_digit);
+    uint constZeroDigit(uint first_word_digit, uint second_word_digit);
 
-    unsigned int constOneDigit(unsigned int first_word_digit, unsigned int second_word_digit);
+    uint constOneDigit(uint first_word_digit, uint second_word_digit);
 
-    unsigned int repeatSecondDigit(unsigned int first_word_digit, unsigned int second_word_digit);
+    uint repeatSecondDigit(uint first_word_digit, uint second_word_digit);
 
-    unsigned int negateSecondDigit(unsigned int first_word_digit, unsigned int second_word_digit);
+    uint negateSecondDigit(uint first_word_digit, uint second_word_digit);
 
-    static unsigned int current_g(unsigned int previous_g, unsigned int previous_l,
-                                  unsigned int this_word_digit, unsigned int other_word_digit);
+    static uint current_g(uint previous_g, uint previous_l, uint this_word_digit, uint other_word_digit);
 
-    static unsigned int current_l(unsigned int previous_l, unsigned int previous_g,
-                                  unsigned int this_word_digit, unsigned int other_word_digit);
+    static uint current_l(uint previous_l, uint previous_g, uint this_word_digit, uint other_word_digit);
 
     bool firstIsGreater(int first_word_index, int second_word_index);
 
@@ -41,9 +40,29 @@ private:
 
     bool areEquale(int first_word_index, int second_word_index);
 
-    int accordanceNumber(std::vector<unsigned int> word_to_compare, int memory_word_index);
+    int accordanceNumber(std::vector<uint> word_to_compare, int memory_word_index);
 
-    std::vector<std::vector<unsigned int>> memory_words;
+    bool vPartsAreEquale(std::vector<uint> word_to_compare, int memory_word_index);
+
+    int vPartSize();
+
+    int aPartSize();
+
+    int bPartSize();
+
+    int sPartSize();
+
+    uint getADigit(int memory_word_index, int ab_shift);
+
+    uint getBDigit(int memory_word_index, int ab_shift);
+
+    uint countSDigit(uint a_digit, uint b_digit, uint transfer_digit);
+
+    uint countTransferDigit(uint a_digit, uint b_digit, uint transfer_digit);
+
+    void addOperation(int memory_word_index);
+
+    std::vector<std::vector<uint>> memory_words;
 
     friend std::ostream& operator<<(std::ostream& out, const DiagonalAM& diagonal_am);
 
@@ -55,11 +74,11 @@ public:
 
     DiagonalAM& operator=(const DiagonalAM& other);
 
-    std::vector<unsigned int> getMatrixString(int string_index);
+    std::vector<uint> getMatrixString(int string_index);
 
-    std::vector<unsigned int> getWord(int word_index);
+    std::vector<uint> getWord(int word_index);
 
-    void insertWord(std::vector<unsigned int> word_to_insert, int word_index);
+    void insertWord(std::vector<uint> word_to_insert, int word_index);
 
     void constantZeroLF(int first_arg_index, int second_arg_index, int result_index);
 
@@ -69,7 +88,9 @@ public:
 
     void negateSecondArgumentLF(int first_arg_index, int second_arg_index, int result_index);
 
-    std::vector<unsigned int> accordanceSearch(std::vector<unsigned int> word_to_search);
+    std::vector<uint> accordanceSearch(std::vector<uint> word_to_search);
+
+    int makeAddition(std::vector<uint> word_to_search);
 
     size_t size();
 
